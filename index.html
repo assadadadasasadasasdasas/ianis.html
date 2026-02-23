@@ -4,490 +4,181 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Istanbul Banyo | Premium Banyo Dolaplari</title>
-<meta name="description" content="Istanbul Banyo - 100+ premium banyo dolabi, dusakabin, aynali dolap. 12 ay taksit, ucretsiz kargo.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Istanbul Banyo - 100+ premium banyo dolabi, dusakabin. 12 ay taksit, ucretsiz kargo.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--g:#B8926A;--gd:#8C6D4F;--gl:#D4B896;--b:#e8e2da;--bg:#fff;--bgw:#FBF9F6;--bgc:#F5F0EB;--t:#2a2a2a;--tl:#666;--t2:#999;--r:#C0392B;--gr:#27AE60;--sh:0 4px 30px rgba(0,0,0,.06)}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden}
-img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
-.topbar{background:var(--g);padding:9px 30px;display:flex;justify-content:center;gap:30px;font-size:.64rem;font-weight:500;color:#fff;letter-spacing:.08em;flex-wrap:wrap;text-align:center}
-nav{position:sticky;top:0;z-index:999;padding:12px 30px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.96);backdrop-filter:blur(15px);border-bottom:1px solid var(--b)}
-.nlogo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:500;letter-spacing:.2em;color:var(--gd);text-transform:uppercase}
-.nlogo small{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:.33em;letter-spacing:.4em;color:var(--t2)}
-.nlinks{display:flex;gap:24px}.nlinks a{color:var(--tl);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;transition:.3s}.nlinks a:hover{color:var(--gd)}
-.nright{display:flex;gap:10px;align-items:center}
-.nph{font-size:.7rem;color:var(--gd);font-weight:500}
-.nic{width:32px;height:32px;border:1px solid var(--b);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;cursor:pointer;color:var(--tl);transition:.3s}
-.nic:hover{border-color:var(--g);color:var(--gd)}
-.hmb{display:none;flex-direction:column;gap:4px;cursor:pointer}.hmb span{width:20px;height:1.5px;background:var(--gd)}
-.hero{height:80vh;position:relative;display:flex;align-items:center;overflow:hidden}
+:root{--g:#B8926A;--gd:#8C6D4F;--gl:#D4B896;--b:#e8e2da;--bg:#fff;--bgw:#FBF9F6;--bgc:#F5F0EB;--t:#2a2a2a;--tl:#666;--t2:#999;--r:#C0392B;--gr:#27AE60}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
+.topbar{background:var(--g);padding:9px 20px;display:flex;justify-content:center;gap:25px;font-size:.63rem;font-weight:500;color:#fff;letter-spacing:.06em;flex-wrap:wrap;text-align:center}
+nav{position:sticky;top:0;z-index:999;padding:12px 25px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.96);backdrop-filter:blur(15px);border-bottom:1px solid var(--b)}
+.nlogo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:500;letter-spacing:.2em;color:var(--gd);text-transform:uppercase}
+.nlogo small{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:.33em;letter-spacing:.35em;color:var(--t2)}
+.nlinks{display:flex;gap:20px}.nlinks a{color:var(--tl);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;transition:.3s}.nlinks a:hover{color:var(--gd)}
+.nph{font-size:.68rem;color:var(--gd);font-weight:500}
+.hero{min-height:80vh;position:relative;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1920&q=80') center/cover}
 .hero-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.65),rgba(255,255,255,.4) 40%,rgba(255,255,255,.55) 65%,rgba(255,255,255,.97))}
-.hero-c{position:relative;text-align:center;max-width:850px;margin:0 auto;padding:0 20px}
-.hero-c h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,5rem);font-weight:400;line-height:1.08;margin-bottom:18px}
+.hero-c{position:relative;text-align:center;max-width:800px;margin:0 auto;padding:60px 20px}
+.hero-c h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,4.5rem);font-weight:400;line-height:1.08;margin-bottom:16px}
 .hero-c h1 em{font-style:italic;color:var(--gd)}
-.hero-c p{font-size:.9rem;color:var(--tl);line-height:1.8;max-width:500px;margin:0 auto 30px}
+.hero-c p{font-size:.88rem;color:var(--tl);line-height:1.8;max-width:480px;margin:0 auto 28px}
 .hbtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.bg{padding:14px 36px;background:var(--g);color:#fff;border:none;font-family:'Jost',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;border-radius:3px;transition:.4s}
-.bg:hover{background:var(--gd);transform:translateY(-2px);box-shadow:0 8px 25px rgba(184,146,106,.3)}
-.bo{padding:14px 36px;background:rgba(255,255,255,.5);color:var(--t);border:1.5px solid var(--g);font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;border-radius:3px;transition:.4s;backdrop-filter:blur(5px)}
+.bg{display:inline-block;padding:13px 34px;background:var(--g);color:#fff;font-family:'Jost',sans-serif;font-size:.64rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;border-radius:3px;transition:.4s}
+.bg:hover{background:var(--gd);transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,146,106,.3)}
+.bo{display:inline-block;padding:13px 34px;background:rgba(255,255,255,.5);color:var(--t);border:1.5px solid var(--g);font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;border-radius:3px;transition:.4s;backdrop-filter:blur(5px)}
 .bo:hover{background:var(--g);color:#fff}
-.hfeats{display:flex;justify-content:center;gap:16px;margin-top:30px;flex-wrap:wrap}
-.hf{font-size:.62rem;color:var(--tl);background:rgba(255,255,255,.7);padding:5px 12px;border-radius:14px;border:1px solid var(--b)}.hf b{color:var(--gr)}
-.trust{background:var(--bgw);border-top:1px solid var(--b);border-bottom:1px solid var(--b);padding:22px 30px}
-.trust-g{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-.ti{display:flex;align-items:center;gap:10px}
-.ti-ic{width:40px;height:40px;border:1px solid var(--b);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;background:var(--bg)}
-.ti h4{font-size:.68rem;font-weight:500}.ti p{font-size:.55rem;color:var(--t2)}
-sec{display:block;padding:70px 30px}
-.shdr{text-align:center;margin-bottom:40px}
-.slab{font-size:.55rem;letter-spacing:.4em;text-transform:uppercase;color:var(--g);margin-bottom:10px;display:block}
-.sttl{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin-bottom:10px}
-.sdiv{width:40px;height:1.5px;margin:0 auto 10px;background:var(--g)}
-.ssub{font-size:.82rem;color:var(--tl);max-width:480px;margin:0 auto;line-height:1.7}
-.catgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;max-width:1100px;margin:0 auto}
-.cc{position:relative;overflow:hidden;border-radius:6px;aspect-ratio:3/4;cursor:pointer}.cc img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:brightness(.78)}.cc:hover img{transform:scale(1.05);filter:brightness(.55)}.cc::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.7))}.cc-i{position:absolute;bottom:12px;left:12px;z-index:2;color:#fff}.cc-i h3{font-family:'Playfair Display',serif;font-size:.85rem}.cc-i span{font-size:.5rem;color:var(--gl);letter-spacing:.12em;text-transform:uppercase}
-.prods{background:var(--bgw)}
-.pf{display:flex;justify-content:center;gap:5px;margin-bottom:30px;flex-wrap:wrap}
-.fb{padding:7px 16px;border:1px solid var(--b);background:var(--bg);color:var(--t2);font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.3s;border-radius:14px}.fb:hover,.fb.a{background:var(--g);color:#fff;border-color:var(--g)}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:1250px;margin:0 auto}
-.pc{background:var(--bg);border:1px solid var(--b);border-radius:8px;overflow:hidden;transition:.4s;position:relative}.pc:hover{border-color:var(--gl);transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.pcb{position:absolute;top:8px;left:8px;z-index:3;padding:3px 8px;font-size:.48rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-radius:2px;color:#fff}.pcb.n{background:var(--g)}.pcb.s{background:var(--r)}.pcb.b{background:var(--gr)}
-.pci{height:210px;overflow:hidden;background:var(--bgc)}.pci img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.pc:hover .pci img{transform:scale(1.04)}
-.pcbd{padding:12px}
-.pcct{font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:var(--g);margin-bottom:3px}
-.pcnm{font-size:.76rem;margin-bottom:5px;line-height:1.3}
-.pccl{display:flex;gap:3px;margin-bottom:6px;flex-wrap:wrap}
-.csw{width:14px;height:14px;border-radius:50%;border:2px solid var(--b);cursor:pointer;transition:.2s;position:relative}.csw:hover{border-color:var(--g);transform:scale(1.35)}.csw .tp{position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);background:var(--t);color:#fff;padding:2px 6px;border-radius:2px;font-size:.46rem;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s;z-index:10}.csw .tp::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:3px solid transparent;border-top-color:var(--t)}.csw:hover .tp{opacity:1}
-.pcpr{display:flex;align-items:baseline;gap:5px;margin-bottom:4px}.pcpr .c{font-size:.95rem;font-weight:600;color:var(--gd)}.pcpr .o{font-size:.65rem;color:var(--t2);text-decoration:line-through}.pcpr .d{font-size:.48rem;background:var(--r);color:#fff;padding:1px 4px;border-radius:2px;font-weight:600}
-.pcin{font-size:.56rem;color:var(--t2);margin-bottom:5px}.pcin b{color:var(--gd)}
-.pcst{font-size:.58rem;color:var(--g);letter-spacing:1px}.pcst .cn{color:var(--t2);margin-left:3px;font-size:.55rem}
-.lmw{text-align:center;margin-top:30px}.lmb{padding:11px 45px;border:1.5px solid var(--g);background:transparent;color:var(--gd);font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:.3s;border-radius:3px}.lmb:hover{background:var(--g);color:#fff}
-.bsec{background:var(--bg);overflow:hidden}
-.bscr{display:flex;gap:16px;max-width:1200px;margin:0 auto;overflow-x:auto;padding:8px 0 20px;scrollbar-width:none}.bscr::-webkit-scrollbar{display:none}
-.bcd{min-width:260px;max-width:260px;border-radius:8px;overflow:hidden;box-shadow:var(--sh);transition:.4s;background:var(--bg)}.bcd:hover{transform:translateY(-3px)}
-.bcd-i{height:300px;overflow:hidden;position:relative}.bcd-i img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.bcd:hover .bcd-i img{transform:scale(1.04)}
-.bcd-tg{position:absolute;top:8px;left:8px;background:var(--g);color:#fff;padding:3px 8px;font-size:.48rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;border-radius:2px}
-.bcd-b{padding:14px}.bcd-b h3{font-family:'Playfair Display',serif;font-size:.92rem;margin-bottom:3px}.bcd-b .pr{font-size:.95rem;font-weight:600;color:var(--gd);margin-bottom:2px}.bcd-b .in{font-size:.55rem;color:var(--t2)}.bcd-b .in b{color:var(--gd)}
-.svcs{background:var(--bgw)}
-.svg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;max-width:1100px;margin:0 auto}
-.svc{padding:24px 18px;border:1px solid var(--b);background:var(--bg);border-radius:8px;text-align:center;transition:.4s}.svc:hover{border-color:var(--gl);transform:translateY(-3px)}
-.svc .ic{font-size:1.6rem;margin-bottom:12px;display:block}.svc h3{font-size:.76rem;font-weight:500;margin-bottom:4px}.svc p{font-size:.65rem;color:var(--t2);line-height:1.6}
-.iban{background:linear-gradient(135deg,var(--gd),var(--g),var(--gl));padding:40px 30px}
-.ibin{max-width:1050px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}
-.ibin h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:#fff}.ibin>p{font-size:.78rem;color:rgba(255,255,255,.8)}
-.icds{display:flex;gap:6px;flex-wrap:wrap}
-.bkc{padding:7px 12px;background:rgba(255,255,255,.9);border-radius:4px;font-size:.58rem;font-weight:600;color:var(--t)}.bkc b{color:var(--gd)}
-.galg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;max-width:1200px;margin:0 auto}
-.gi{position:relative;overflow:hidden;border-radius:6px;aspect-ratio:4/3;cursor:pointer}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .7s;filter:brightness(.82)}.gi:hover img{transform:scale(1.04);filter:brightness(.6)}.gi::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.6))}.gi-l{position:absolute;bottom:10px;left:10px;z-index:2;color:#fff}.gi-l span{font-size:.45rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gl)}.gi-l h4{font-family:'Playfair Display',serif;font-size:.82rem}
-.stsg{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;max-width:1000px;margin:0 auto;text-align:center;padding:50px 30px;border-top:1px solid var(--b);border-bottom:1px solid var(--b)}
-.sti .nm{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--gd)}.sti .lb{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--t2);margin-top:3px}
-.rvsec{background:var(--bgc);padding:50px 0;overflow:hidden}.rvsec .shdr{padding:0 30px}
-.rvt{display:flex;gap:14px;animation:rvs 80s linear infinite;width:max-content}.rvt:hover{animation-play-state:paused}
-.rvc{min-width:280px;max-width:280px;padding:18px;background:var(--bg);border:1px solid var(--b);border-radius:8px;flex-shrink:0}
-.rvc .s{color:var(--g);font-size:.58rem;letter-spacing:2px;margin-bottom:8px}.rvc .tx{font-size:.72rem;color:var(--tl);line-height:1.7;margin-bottom:12px;font-style:italic}
-.rvc .au{display:flex;align-items:center;gap:8px}.rvc .av{width:32px;height:32px;border:1px solid var(--gl);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--gd);background:var(--bgc)}.rvc .nm2{font-size:.68rem;font-weight:500}.rvc .lc{font-size:.55rem;color:var(--t2)}
+.hfeats{display:flex;justify-content:center;gap:14px;margin-top:28px;flex-wrap:wrap}
+.hf{font-size:.6rem;color:var(--tl);background:rgba(255,255,255,.7);padding:5px 11px;border-radius:12px;border:1px solid var(--b)}
+.trust{background:var(--bgw);border-top:1px solid var(--b);border-bottom:1px solid var(--b);padding:20px 20px}
+.trust-g{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+.ti{display:flex;align-items:center;gap:10px}.ti-ic{width:38px;height:38px;border:1px solid var(--b);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;background:var(--bg)}
+.ti h4{font-size:.66rem;font-weight:500}.ti p{font-size:.52rem;color:var(--t2)}
+.sec{padding:65px 25px}
+.shdr{text-align:center;margin-bottom:38px}
+.slab{font-size:.53rem;letter-spacing:.38em;text-transform:uppercase;color:var(--g);margin-bottom:8px;display:block}
+.sttl{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:400;margin-bottom:8px}
+.sdiv{width:38px;height:1.5px;margin:0 auto 8px;background:var(--g)}
+.ssub{font-size:.8rem;color:var(--tl);max-width:460px;margin:0 auto;line-height:1.7}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;max-width:1200px;margin:0 auto}
+.pc{background:var(--bg);border:1px solid var(--b);border-radius:7px;overflow:hidden;transition:.4s;position:relative}.pc:hover{border-color:var(--gl);transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.07)}
+.pcb{position:absolute;top:7px;left:7px;z-index:3;padding:3px 8px;font-size:.46rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-radius:2px;color:#fff}.pcb.n{background:var(--g)}.pcb.s{background:var(--r)}.pcb.b{background:var(--gr)}
+.pci{height:200px;overflow:hidden;background:var(--bgc)}.pci img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.pc:hover .pci img{transform:scale(1.04)}
+.pcbd{padding:11px}
+.pcct{font-size:.46rem;letter-spacing:.16em;text-transform:uppercase;color:var(--g);margin-bottom:3px}
+.pcnm{font-size:.73rem;margin-bottom:4px;line-height:1.3}
+.pccl{display:flex;gap:3px;margin-bottom:5px;flex-wrap:wrap}
+.csw{width:13px;height:13px;border-radius:50%;border:2px solid var(--b);cursor:pointer;transition:.2s;position:relative}.csw:hover{border-color:var(--g);transform:scale(1.35)}.csw .tp{position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);background:var(--t);color:#fff;padding:2px 5px;border-radius:2px;font-size:.44rem;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s;z-index:10}.csw .tp::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:3px solid transparent;border-top-color:var(--t)}.csw:hover .tp{opacity:1}
+.pcpr{display:flex;align-items:baseline;gap:4px;margin-bottom:3px}.pcpr .c{font-size:.9rem;font-weight:600;color:var(--gd)}.pcpr .o{font-size:.6rem;color:var(--t2);text-decoration:line-through}.pcpr .d{font-size:.46rem;background:var(--r);color:#fff;padding:1px 4px;border-radius:2px;font-weight:600}
+.pcin{font-size:.53rem;color:var(--t2);margin-bottom:4px}.pcin b{color:var(--gd)}
+.pcst{font-size:.55rem;color:var(--g)}.pcst .cn{color:var(--t2);margin-left:3px}
+.pf{display:flex;justify-content:center;gap:4px;margin-bottom:25px;flex-wrap:wrap}
+.fb{padding:6px 14px;border:1px solid var(--b);background:var(--bg);color:var(--t2);font-family:'Jost',sans-serif;font-size:.57rem;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:.3s;border-radius:12px}.fb:hover,.fb.a{background:var(--g);color:#fff;border-color:var(--g)}
+.lmw{text-align:center;margin-top:28px}.lmb{padding:10px 40px;border:1.5px solid var(--g);background:transparent;color:var(--gd);font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:.3s;border-radius:3px}.lmb:hover{background:var(--g);color:#fff}
+.bscr{display:flex;gap:14px;max-width:1200px;margin:0 auto;overflow-x:auto;padding:5px 0 18px;scrollbar-width:none}.bscr::-webkit-scrollbar{display:none}
+.bcd{min-width:240px;max-width:240px;border-radius:8px;overflow:hidden;box-shadow:0 3px 20px rgba(0,0,0,.06);transition:.4s;background:var(--bg)}.bcd:hover{transform:translateY(-3px)}
+.bcd-i{height:280px;overflow:hidden;position:relative}.bcd-i img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.bcd:hover .bcd-i img{transform:scale(1.04)}
+.bcd-tg{position:absolute;top:7px;left:7px;background:var(--g);color:#fff;padding:3px 7px;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border-radius:2px}
+.bcd-b{padding:12px}.bcd-b h3{font-family:'Playfair Display',serif;font-size:.88rem;margin-bottom:3px}.bcd-b .pr{font-size:.88rem;font-weight:600;color:var(--gd)}.bcd-b .in{font-size:.52rem;color:var(--t2)}.bcd-b .in b{color:var(--gd)}
+.svg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;max-width:1100px;margin:0 auto}
+.svc{padding:22px 16px;border:1px solid var(--b);background:var(--bg);border-radius:7px;text-align:center;transition:.4s}.svc:hover{border-color:var(--gl);transform:translateY(-2px)}
+.svc .ic{font-size:1.5rem;margin-bottom:10px;display:block}.svc h3{font-size:.72rem;font-weight:500;margin-bottom:3px}.svc p{font-size:.62rem;color:var(--t2);line-height:1.5}
+.iban{background:linear-gradient(135deg,var(--gd),var(--g),var(--gl));padding:35px 25px;text-align:center}
+.iban h2{font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;margin-bottom:5px}.iban>p{font-size:.75rem;color:rgba(255,255,255,.8);margin-bottom:14px}
+.icds{display:flex;gap:5px;flex-wrap:wrap;justify-content:center}
+.bkc{padding:6px 11px;background:rgba(255,255,255,.9);border-radius:4px;font-size:.56rem;font-weight:600;color:var(--t)}.bkc b{color:var(--gd)}
+.stsg{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;max-width:900px;margin:0 auto;text-align:center;padding:45px 20px;border-top:1px solid var(--b);border-bottom:1px solid var(--b)}
+.sti .nm{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gd)}.sti .lb{font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--t2);margin-top:2px}
+.rvsec{background:var(--bgc);padding:45px 0;overflow:hidden}.rvsec .shdr{padding:0 25px}
+.rvt{display:flex;gap:12px;animation:rvs 80s linear infinite;width:max-content}.rvt:hover{animation-play-state:paused}
+.rvc{min-width:260px;max-width:260px;padding:16px;background:var(--bg);border:1px solid var(--b);border-radius:7px;flex-shrink:0}
+.rvc .s{color:var(--g);font-size:.55rem;letter-spacing:2px;margin-bottom:7px}.rvc .tx{font-size:.68rem;color:var(--tl);line-height:1.7;margin-bottom:10px;font-style:italic}
+.rvc .au{display:flex;align-items:center;gap:7px}.rvc .av{width:30px;height:30px;border:1px solid var(--gl);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--gd);background:var(--bgc)}.rvc .n2{font-size:.65rem;font-weight:500}.rvc .lc{font-size:.52rem;color:var(--t2)}
 @keyframes rvs{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.blsec{background:var(--bgw)}
-.bltb{display:flex;justify-content:space-between;max-width:1100px;margin:0 auto 20px;gap:10px;flex-wrap:wrap}
-.blsi{padding:7px 14px;border:1.5px solid var(--b);border-radius:18px;font-family:'Jost',sans-serif;font-size:.74rem;outline:none;width:250px;background:var(--bg);color:var(--t);transition:.3s}.blsi:focus{border-color:var(--g)}
-.blfs{display:flex;gap:4px;flex-wrap:wrap}
-.blf{padding:5px 12px;border:1px solid var(--b);background:var(--bg);color:var(--t2);font-family:'Jost',sans-serif;font-size:.55rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;border-radius:12px;transition:.3s}.blf:hover,.blf.a{background:var(--g);color:#fff;border-color:var(--g)}
-.blcnt{text-align:center;max-width:1100px;margin:0 auto 14px;font-size:.64rem;color:var(--t2)}.blcnt b{color:var(--gd)}
-.blgr{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;max-width:1100px;margin:0 auto}
-.blc{background:var(--bg);border:1px solid var(--b);border-radius:8px;overflow:hidden;transition:.4s}.blc:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.08)}
-.blci{height:155px;overflow:hidden;position:relative}.blci img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.blc:hover .blci img{transform:scale(1.04)}
-.blci .tg{position:absolute;top:7px;left:7px;background:var(--g);color:#fff;padding:2px 7px;font-size:.45rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border-radius:2px}
-.blcb{padding:14px}
-.blcm{display:flex;gap:8px;margin-bottom:5px;font-size:.5rem;color:var(--t2);letter-spacing:.06em;text-transform:uppercase}
-.blcb h3{font-family:'Playfair Display',serif;font-size:.84rem;color:var(--t);margin-bottom:4px;line-height:1.3}
-.blcb p{font-size:.66rem;color:var(--t2);line-height:1.6;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.bltgs{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:6px}.bltg{font-size:.44rem;padding:1px 5px;border:1px solid var(--b);border-radius:7px;color:var(--t2)}
-.bllk{font-size:.54rem;color:var(--gd);letter-spacing:.14em;text-transform:uppercase;font-weight:500}
-.fqi{border-bottom:1px solid var(--b)}.fqq{padding:14px 0;cursor:pointer;display:flex;justify-content:space-between;font-size:.8rem;transition:.3s}.fqq:hover{color:var(--gd)}.fqq::after{content:'+';font-size:1rem;color:var(--g);transition:transform .3s}.fqi.op .fqq::after{transform:rotate(45deg)}.fqa{max-height:0;overflow:hidden;transition:max-height .4s;font-size:.74rem;color:var(--tl);line-height:1.7}.fqi.op .fqa{max-height:200px;padding-bottom:14px}
+.blgr{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;max-width:1100px;margin:0 auto}
+.blc{background:var(--bg);border:1px solid var(--b);border-radius:7px;overflow:hidden;transition:.4s}.blc:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.07)}
+.blci{height:140px;overflow:hidden;position:relative}.blci img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.blc:hover .blci img{transform:scale(1.04)}
+.blci .tg{position:absolute;top:6px;left:6px;background:var(--g);color:#fff;padding:2px 6px;font-size:.43rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-radius:2px}
+.blcb{padding:12px}
+.blcb h3{font-family:'Playfair Display',serif;font-size:.8rem;color:var(--t);margin-bottom:3px;line-height:1.3}
+.bltgs{display:flex;gap:2px;flex-wrap:wrap;margin-bottom:5px}.bltg{font-size:.42rem;padding:1px 4px;border:1px solid var(--b);border-radius:6px;color:var(--t2)}
+.bllk{font-size:.52rem;color:var(--gd);letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.blfs{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;margin-bottom:14px}
+.blf{padding:5px 11px;border:1px solid var(--b);background:var(--bg);color:var(--t2);font-family:'Jost',sans-serif;font-size:.52rem;cursor:pointer;border-radius:10px;transition:.3s}.blf:hover,.blf.a{background:var(--g);color:#fff;border-color:var(--g)}
+.blsi{display:block;margin:0 auto 12px;padding:7px 14px;border:1.5px solid var(--b);border-radius:16px;font-family:'Jost',sans-serif;font-size:.72rem;outline:none;width:260px;max-width:100%;background:var(--bg);color:var(--t)}.blsi:focus{border-color:var(--g)}
+.blcnt{text-align:center;margin-bottom:12px;font-size:.62rem;color:var(--t2)}.blcnt b{color:var(--gd)}
+.fqi{border-bottom:1px solid var(--b)}.fqq{padding:13px 0;cursor:pointer;display:flex;justify-content:space-between;font-size:.76rem;transition:.3s}.fqq:hover{color:var(--gd)}.fqq::after{content:'+';font-size:1rem;color:var(--g);transition:transform .3s}.fqi.op .fqq::after{transform:rotate(45deg)}.fqa{max-height:0;overflow:hidden;transition:max-height .4s;font-size:.7rem;color:var(--tl);line-height:1.7}.fqi.op .fqa{max-height:200px;padding-bottom:12px}
 .ctasec{position:relative;text-align:center;background:var(--bgw);overflow:hidden}
 .ctabg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1920&q=70') center/cover;opacity:.04}
-.ctac{position:relative;max-width:600px;margin:0 auto}
-.ctac h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.5rem);margin-bottom:12px}.ctac h2 em{color:var(--gd);font-style:italic}
-.ctac>p{color:var(--tl);line-height:1.7;margin-bottom:25px;font-size:.85rem}
-.ctaf{display:flex;gap:7px;max-width:440px;margin:0 auto 30px}
-.ctaf input{flex:1;padding:11px 16px;border:1.5px solid var(--b);border-radius:3px;font-family:'Jost',sans-serif;font-size:.8rem;outline:none}.ctaf input:focus{border-color:var(--g)}
-.ctaf button{padding:11px 24px;background:var(--g);color:#fff;border:none;font-family:'Jost',sans-serif;font-size:.62rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;border-radius:3px;white-space:nowrap;transition:.3s}.ctaf button:hover{background:var(--gd)}
-.ctr{display:flex;justify-content:center;gap:40px;padding-top:25px;border-top:1px solid var(--b);flex-wrap:wrap}
-.cti .cl{font-size:.5rem;letter-spacing:.25em;text-transform:uppercase;color:var(--g);margin-bottom:4px}.cti .cv{font-size:.74rem;color:var(--tl)}
-
-.seoc{background:var(--bgc);padding:50px 30px}.seoin{max-width:850px;margin:0 auto}.seoin h2{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:8px}.seoin h3{font-size:.78rem;font-weight:500;margin:12px 0 4px;color:var(--gd)}.seoin p{font-size:.68rem;color:var(--tl);line-height:1.8;margin-bottom:6px}
-
-footer{background:var(--t);padding:50px 30px 25px;color:rgba(255,255,255,.5)}
-.ftg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:25px;max-width:1100px;margin:0 auto 35px}
-.ftb .lg{font-family:'Playfair Display',serif;font-size:1rem;letter-spacing:.2em;color:var(--gl);text-transform:uppercase;margin-bottom:8px}
-.ftb>p{font-size:.65rem;color:rgba(255,255,255,.3);line-height:1.7;margin-bottom:10px}
-.fts{display:flex;gap:5px}.fts a{width:28px;height:28px;border:1px solid rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:.55rem;transition:.3s}.fts a:hover{border-color:var(--g);color:var(--g)}
-.ftc h4{font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gl);margin-bottom:14px}.ftc a{display:block;color:rgba(255,255,255,.3);font-size:.65rem;margin-bottom:7px;transition:.3s}.ftc a:hover{color:var(--gl)}
-.ftbt{max-width:1100px;margin:0 auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.ftbt p{font-size:.55rem;color:rgba(255,255,255,.2)}.ftpy{display:flex;gap:5px}.ftpy span{padding:2px 7px;border:1px solid rgba(255,255,255,.06);font-size:.48rem;color:rgba(255,255,255,.25);border-radius:2px}
-@media(max-width:900px){.nlinks,.nph{display:none}.hmb{display:flex}sec{padding:45px 14px}.catgrid{grid-template-columns:repeat(2,1fr)}.pgrid{grid-template-columns:repeat(2,1fr);gap:8px}.pci{height:150px}.pcbd{padding:8px}.svg{grid-template-columns:1fr 1fr}.stsg{grid-template-columns:repeat(3,1fr)}.blgr{grid-template-columns:1fr}.hero{height:70vh}.hbtns{flex-direction:column;align-items:center}.ctaf{flex-direction:column}.ctr{flex-direction:column;gap:12px}.ftg{grid-template-columns:1fr 1fr}.ftbt{flex-direction:column;text-align:center}.ibin{flex-direction:column;text-align:center}.icds{justify-content:center}.galg{grid-template-columns:1fr 1fr}}
+.ctac{position:relative;max-width:560px;margin:0 auto}
+.ctac h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.3rem);margin-bottom:10px}.ctac h2 em{color:var(--gd);font-style:italic}
+.ctac>p{color:var(--tl);line-height:1.7;margin-bottom:22px;font-size:.82rem}
+.ctaf{display:flex;gap:6px;max-width:400px;margin:0 auto 25px}.ctaf input{flex:1;padding:10px 14px;border:1.5px solid var(--b);border-radius:3px;font-family:'Jost',sans-serif;font-size:.78rem;outline:none}.ctaf input:focus{border-color:var(--g)}
+.ctaf button{padding:10px 20px;background:var(--g);color:#fff;border:none;font-family:'Jost',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:3px;white-space:nowrap}
+.ctr{display:flex;justify-content:center;gap:35px;padding-top:22px;border-top:1px solid var(--b);flex-wrap:wrap}
+.cti .cl{font-size:.48rem;letter-spacing:.22em;text-transform:uppercase;color:var(--g);margin-bottom:3px}.cti .cv{font-size:.72rem;color:var(--tl)}
+footer{background:var(--t);padding:45px 25px 22px;color:rgba(255,255,255,.5)}
+.ftg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:22px;max-width:1000px;margin:0 auto 30px}
+.ftb .lg{font-family:'Playfair Display',serif;font-size:.95rem;letter-spacing:.2em;color:var(--gl);text-transform:uppercase;margin-bottom:7px}
+.ftb>p{font-size:.62rem;color:rgba(255,255,255,.3);line-height:1.6;margin-bottom:10px}
+.ftc h4{font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gl);margin-bottom:12px}.ftc a{display:block;color:rgba(255,255,255,.3);font-size:.62rem;margin-bottom:6px;transition:.3s}.ftc a:hover{color:var(--gl)}
+.ftbt{max-width:1000px;margin:0 auto;padding-top:15px;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.ftbt p{font-size:.52rem;color:rgba(255,255,255,.2)}.ftpy{display:flex;gap:4px}.ftpy span{padding:2px 6px;border:1px solid rgba(255,255,255,.06);font-size:.46rem;color:rgba(255,255,255,.25);border-radius:2px}
+@media(max-width:800px){.nlinks,.nph{display:none}.pgrid{grid-template-columns:repeat(2,1fr);gap:8px}.pci{height:140px}.pcbd{padding:8px}.svg{grid-template-columns:1fr 1fr}.stsg{grid-template-columns:repeat(3,1fr)}.blgr{grid-template-columns:1fr}.hero{min-height:70vh}.hbtns{flex-direction:column;align-items:center}.ctaf{flex-direction:column}.ctr{flex-direction:column;gap:10px}.ftg{grid-template-columns:1fr 1fr}.ftbt{flex-direction:column;text-align:center}.icds{justify-content:center}}
 </style>
 </head>
 <body>
 <div class="topbar"><span>&#x1F69A; 2.000TL Uzeri Ucretsiz Kargo</span><span>&#x1F4B3; 12 Ay Taksit</span><span>&#x1F527; Ucretsiz Montaj</span><span>&#x1F504; 14 Gun Iade</span></div>
-<nav>
-<a href="#" class="nlogo">Istanbul<small>Banyo &amp; Tasarim</small></a>
-<div class="nlinks"><a href="#kat">Kategoriler</a><a href="#urn">Urunler</a><a href="#cok">Cok Satanlar</a><a href="#hiz">Hizmetler</a><a href="#gal">Galeri</a><a href="#blg">Blog</a><a href="#ile">Iletisim</a></div>
-<div class="nright"><span class="nph">0212 123 45 67</span><div class="nic">&#9825;</div><div class="nic">&#128722;</div></div>
-<div class="hmb"><span></span><span></span><span></span></div>
-</nav>
-<div class="hero"><div class="hero-bg"></div><div class="hero-ov"></div>
-<div class="hero-c">
-<h1>Banyonuza<br><em>Istanbul</em>'un<br>Zarafetini Katin</h1>
-<p>100+ premium model, 12 aya varan taksit imkani ve ucretsiz montaj ile hayalinizdeki banyoyu gercege donusturun.</p>
-<div class="hbtns"><a href="#urn" class="bg">100+ Urunu Kesfet</a><a href="#ile" class="bo">Ucretsiz Kesif Randevusu</a></div>
-<div class="hfeats"><span class="hf"><b>&#10003;</b> Ucretsiz Kargo</span><span class="hf"><b>&#10003;</b> 12 Ay Taksit</span><span class="hf"><b>&#10003;</b> 10 Yil Garanti</span><span class="hf"><b>&#10003;</b> Ucretsiz Montaj</span></div>
-</div></div>
-<div class="trust"><div class="trust-g">
-<div class="ti"><div class="ti-ic">&#127942;</div><div><h4>25+ Yil</h4><p>Tecrube</p></div></div>
-<div class="ti"><div class="ti-ic">&#128666;</div><div><h4>Ucretsiz Kargo</h4><p>2.000TL uzeri</p></div></div>
-<div class="ti"><div class="ti-ic">&#128179;</div><div><h4>12 Ay Taksit</h4><p>Tum kartlara</p></div></div>
-<div class="ti"><div class="ti-ic">&#128295;</div><div><h4>Ucretsiz Montaj</h4><p>81 ilde</p></div></div>
-<div class="ti"><div class="ti-ic">&#128737;</div><div><h4>10 Yil Garanti</h4><p>Tam guvence</p></div></div>
-</div></div>
-<sec id="kat"><div class="shdr"><span class="slab">Kategoriler</span><h2 class="sttl">Banyo Cozumlerimiz</h2><div class="sdiv"></div></div><div class="catgrid" id="cg"></div></sec>
-<sec class="prods" id="urn"><div class="shdr"><span class="slab">100+ Premium Model</span><h2 class="sttl">Tum Urunler</h2><div class="sdiv"></div><p class="ssub">Her butceye uygun premium banyo cozumleri. 12 aya varan taksit.</p></div><div class="pf" id="pf"></div><div class="pgrid" id="pg"></div><div class="lmw"><button class="lmb" id="lm">Daha Fazla Urun Goster</button></div></sec>
-<sec class="bsec" id="cok"><div class="shdr"><span class="slab">Cok Satanlar</span><h2 class="sttl">En Cok Tercih Edilen Urunler</h2><div class="sdiv"></div></div><div class="bscr" id="bs"></div></sec>
-<sec class="svcs" id="hiz"><div class="shdr"><span class="slab">Hizmetlerimiz</span><h2 class="sttl">Anahtar Teslim Banyo Cozumleri</h2><div class="sdiv"></div></div><div class="svg" id="svgr"></div></sec>
-<div class="iban"><div class="ibin"><div><h2>12 Aya Varan Taksit Imkani</h2><p>Tum banka kartlarina gecerli</p></div><div class="icds"><div class="bkc">Bonus <b>12 Taksit</b></div><div class="bkc">Maximum <b>12 Taksit</b></div><div class="bkc">World <b>9 Taksit</b></div><div class="bkc">Axess <b>12 Taksit</b></div><div class="bkc">Paraf <b>9 Taksit</b></div><div class="bkc">CardFinans <b>6 Taksit</b></div></div></div></div>
-<sec id="gal"><div class="shdr"><span class="slab">Galeri</span><h2 class="sttl">Tamamlanan Projelerimiz</h2><div class="sdiv"></div></div><div class="galg" id="gg"></div></sec>
-<div class="stsg"><div class="sti"><div class="nm">15,000+</div><div class="lb">Mutlu Musteri</div></div><div class="sti"><div class="nm">25+</div><div class="lb">Yil Tecrube</div></div><div class="sti"><div class="nm">100+</div><div class="lb">Urun Modeli</div></div><div class="sti"><div class="nm">81</div><div class="lb">Ilde Hizmet</div></div><div class="sti"><div class="nm">50+</div><div class="lb">Yetkili Bayi</div></div></div>
+<nav><a href="#" class="nlogo">Istanbul<small>Banyo ve Tasarim</small></a><div class="nlinks"><a href="#urn">Urunler</a><a href="#cok">Cok Satanlar</a><a href="#hiz">Hizmetler</a><a href="#blg">Blog</a><a href="#ile">Iletisim</a></div><span class="nph">0212 123 45 67</span></nav>
+<div class="hero"><div class="hero-bg"></div><div class="hero-ov"></div><div class="hero-c"><h1>Banyonuza<br><em>Istanbul</em>'un<br>Zarafetini Katin</h1><p>100+ premium model, 12 aya varan taksit ve ucretsiz montaj ile hayalinizdeki banyoyu gercege donusturun.</p><div class="hbtns"><a href="#urn" class="bg">100+ Urunu Kesfet</a><a href="#ile" class="bo">Ucretsiz Kesif Randevusu</a></div><div class="hfeats"><span class="hf"><b style="color:var(--gr)">&#10003;</b> Ucretsiz Kargo</span><span class="hf"><b style="color:var(--gr)">&#10003;</b> 12 Ay Taksit</span><span class="hf"><b style="color:var(--gr)">&#10003;</b> 10 Yil Garanti</span><span class="hf"><b style="color:var(--gr)">&#10003;</b> Ucretsiz Montaj</span></div></div></div>
+<div class="trust"><div class="trust-g"><div class="ti"><div class="ti-ic">&#127942;</div><div><h4>25+ Yil</h4><p>Tecrube</p></div></div><div class="ti"><div class="ti-ic">&#128666;</div><div><h4>Ucretsiz Kargo</h4><p>2.000TL uzeri</p></div></div><div class="ti"><div class="ti-ic">&#128179;</div><div><h4>12 Ay Taksit</h4><p>Tum kartlara</p></div></div><div class="ti"><div class="ti-ic">&#128295;</div><div><h4>Ucretsiz Montaj</h4><p>81 ilde</p></div></div><div class="ti"><div class="ti-ic">&#128737;</div><div><h4>10 Yil Garanti</h4><p>Tam guvence</p></div></div></div></div>
+<div class="sec" style="background:var(--bgw)" id="urn"><div class="shdr"><span class="slab">100+ Premium Model</span><h2 class="sttl">Tum Urunler</h2><div class="sdiv"></div><p class="ssub">Her butceye uygun premium banyo cozumleri. 12 aya varan taksit.</p></div><div class="pf" id="pf"></div><div class="pgrid" id="pg"></div><div class="lmw"><button class="lmb" id="lm" onclick="moreP()">Daha Fazla Urun Goster</button></div></div>
+<div class="sec" id="cok"><div class="shdr"><span class="slab">Cok Satanlar</span><h2 class="sttl">En Cok Tercih Edilenler</h2><div class="sdiv"></div></div><div class="bscr" id="bs"></div></div>
+<div class="sec" style="background:var(--bgw)" id="hiz"><div class="shdr"><span class="slab">Hizmetlerimiz</span><h2 class="sttl">Anahtar Teslim Banyo</h2><div class="sdiv"></div></div><div class="svg" id="svgr"></div></div>
+<div class="iban"><h2>12 Aya Varan Taksit Imkani</h2><p>Tum banka kartlarina gecerli</p><div class="icds"><div class="bkc">Bonus <b>12 Taksit</b></div><div class="bkc">Maximum <b>12 Taksit</b></div><div class="bkc">World <b>9 Taksit</b></div><div class="bkc">Axess <b>12 Taksit</b></div><div class="bkc">Paraf <b>9 Taksit</b></div><div class="bkc">CardFinans <b>6 Taksit</b></div></div></div>
+<div class="stsg"><div class="sti"><div class="nm">15,000+</div><div class="lb">Mutlu Musteri</div></div><div class="sti"><div class="nm">25+</div><div class="lb">Yil Tecrube</div></div><div class="sti"><div class="nm">100+</div><div class="lb">Urun</div></div><div class="sti"><div class="nm">81</div><div class="lb">Ilde Hizmet</div></div><div class="sti"><div class="nm">50+</div><div class="lb">Bayi</div></div></div>
 <div class="rvsec"><div class="shdr"><span class="slab">Musteri Yorumlari</span><h2 class="sttl">15.000+ Mutlu Musteri</h2><div class="sdiv"></div></div><div class="rvt" id="rvt"></div></div>
-<sec class="blsec" id="blg"><div class="shdr"><span class="slab">Blog - 200 Makale</span><h2 class="sttl">Banyo Ilham Dunyasi</h2><div class="sdiv"></div></div><div class="bltb"><input class="blsi" id="bls" placeholder="Blog yazilarda ara..." oninput="fbl()"><div class="blfs" id="blfs"></div></div><div class="blcnt" id="blcn"></div><div class="blgr" id="blgr"></div><div class="lmw"><button class="lmb" id="bllm" onclick="blMore()">Daha Fazla Yazi</button></div></sec>
-<sec style="background:var(--bg)"><div class="shdr"><span class="slab">SSS</span><h2 class="sttl">Sikca Sorulan Sorular</h2><div class="sdiv"></div></div><div style="max-width:700px;margin:0 auto" id="fql"></div></sec>
-<sec class="ctasec" id="ile"><div class="ctabg"></div><div class="ctac"><span class="slab">Iletisim</span><h2>Hayalinizdeki <em>Banyoyu</em> Tasarlayalim</h2><p>Ucretsiz kesif randevusu alin, uzman ekibimiz sizi arasin.</p><div class="ctaf"><input placeholder="Adiniz Soyadiniz"><input placeholder="Telefon Numaraniz"><button>Bizi Arayin</button></div><div class="ctr"><div class="cti"><div class="cl">Telefon</div><div class="cv">0212 123 45 67</div></div><div class="cti"><div class="cl">WhatsApp</div><div class="cv">0532 123 45 67</div></div><div class="cti"><div class="cl">E-posta</div><div class="cv">info[at]istanbulbanyo.com.tr</div></div><div class="cti"><div class="cl">Showroom</div><div class="cv">Maslak, Istanbul</div></div></div></div></sec>
-<div class="seoc"><div class="seoin"><h2>Istanbul Banyo - Turkiye'nin Premium Banyo Markasi</h2><p>Istanbul Banyo, 1999 yilindan bu yana premium banyo dolaplari, dusakabinler, aynali dolaplar uretmektedir.</p><h3>Banyo Dolabi Modelleri</h3><p>Modern, klasik, rustik ve minimalist tarzlarda 50'den fazla model. Mat lake, parlak lake, dogal mese, ceviz kaplama secenekleri.</p><h3>Dusakabin Modelleri</h3><p>8mm ve 10mm temperli cam, paslanmaz celik profil, nano kaplama teknolojisi. Kose giris, duz panel, walk-in modeller.</p><h3>Taksit ve Odeme</h3><p>Bonus, Maximum, World, Axess, Paraf, CardFinans kartlarina 12 aya varan taksit. 2.000TL uzeri ucretsiz kargo.</p></div></div>
-<footer><div class="ftg">
-<div class="ftb"><div class="lg">ISTANBUL BANYO</div><p>Istanbul'un estetigi ile premium banyo cozumleri. 25+ yil tecrube, 100+ model.</p><div class="fts"><a href="#">IG</a><a href="#">FB</a><a href="#">YT</a><a href="#">TW</a></div></div>
-<div class="ftc"><h4>Urunler</h4><a href="#">Banyo Dolaplari</a><a href="#">Dusakabinler</a><a href="#">Aynali Dolaplar</a><a href="#">Lavabo Takimlari</a><a href="#">Aksesuarlar</a></div>
-<div class="ftc"><h4>Hizmetler</h4><a href="#">Ucretsiz Kesif</a><a href="#">3D Tasarim</a><a href="#">Montaj</a><a href="#">Taksit</a><a href="#">Iade</a><a href="#">Garanti</a></div>
-<div class="ftc"><h4>Iletisim</h4><a href="#">0212 123 45 67</a><a href="#">WhatsApp</a><a href="#">Maslak, Istanbul</a><a href="#">Pzt-Cmt: 09-19</a></div>
-</div><div class="ftbt"><p>&copy; 2026 Istanbul Banyo. Tum haklari saklidir.</p><div class="ftpy"><span>Visa</span><span>MC</span><span>Troy</span><span>Bonus</span><span>Maximum</span><span>Axess</span><span>World</span></div></div></footer>
+<div class="sec" style="background:var(--bgw)" id="blg"><div class="shdr"><span class="slab">Blog - 200 Makale</span><h2 class="sttl">Banyo Ilham Dunyasi</h2><div class="sdiv"></div></div><input class="blsi" id="bls" placeholder="Blog yazilarda ara..." oninput="fbl()"><div class="blfs" id="blfs"></div><div class="blcnt" id="blcn"></div><div class="blgr" id="blgr"></div><div class="lmw"><button class="lmb" id="bllm" onclick="blMore()">Daha Fazla Yazi</button></div></div>
+<div class="sec"><div class="shdr"><span class="slab">SSS</span><h2 class="sttl">Sikca Sorulan Sorular</h2><div class="sdiv"></div></div><div style="max-width:650px;margin:0 auto" id="fql"></div></div>
+<div class="sec ctasec" id="ile"><div class="ctabg"></div><div class="ctac"><span class="slab">Iletisim</span><h2>Hayalinizdeki <em>Banyoyu</em> Tasarlayalim</h2><p>Ucretsiz kesif randevusu alin, uzman ekibimiz sizi arasin.</p><div class="ctaf"><input placeholder="Adiniz"><input placeholder="Telefonunuz"><button>Arayin</button></div><div class="ctr"><div class="cti"><div class="cl">Telefon</div><div class="cv">0212 123 45 67</div></div><div class="cti"><div class="cl">WhatsApp</div><div class="cv">0532 123 45 67</div></div><div class="cti"><div class="cl">Showroom</div><div class="cv">Maslak, Istanbul</div></div></div></div></div>
+<footer><div class="ftg"><div class="ftb"><div class="lg">ISTANBUL BANYO</div><p>Premium banyo cozumleri. 25+ yil, 100+ model, 81 ilde hizmet.</p></div><div class="ftc"><h4>Urunler</h4><a href="#">Banyo Dolaplari</a><a href="#">Dusakabinler</a><a href="#">Aynali Dolaplar</a><a href="#">Lavabo Takimlari</a></div><div class="ftc"><h4>Hizmetler</h4><a href="#">Ucretsiz Kesif</a><a href="#">3D Tasarim</a><a href="#">Montaj</a><a href="#">Taksit</a></div><div class="ftc"><h4>Iletisim</h4><a href="#">0212 123 45 67</a><a href="#">Maslak, Istanbul</a><a href="#">Pzt-Cmt: 09-19</a></div></div><div class="ftbt"><p>2026 Istanbul Banyo. Tum haklari saklidir.</p><div class="ftpy"><span>Visa</span><span>MC</span><span>Troy</span><span>Bonus</span><span>Axess</span><span>World</span></div></div></footer>
 <script>
+try{
 var BI=['photo-1584622650111-993a426fbf0a','photo-1600566753376-12c8ab7fb75b','photo-1600566752355-35792bedcfea','photo-1600607687644-aac4c3eac7f4','photo-1600607687920-4e2a09cf159d','photo-1631679706909-1844bbd07221','photo-1600585154340-be6161a56a0c','photo-1600573472592-401b489a3cdc','photo-1507652313519-d4e9174996dd','photo-1600607687939-ce8a6c25118c','photo-1552321554-5fefe8c9ef14','photo-1600566753190-17f0baa2a6c3'];
-function bi(i){return 'https://images.unsplash.com/'+BI[i%BI.length]+'?w=500&q=70&auto=format'}
-var WI=['photo-1616394584738-fc6e612e71b9','photo-1570172619644-dfd03ed5d881','photo-1596755389378-c31d21fd1273','photo-1522337360788-8b13dee7a37e','photo-1512361436605-a484bdb34b5f','photo-1494790108377-be9c29b29330','photo-1531746020798-e6953c6e8e04','photo-1515886657613-9f3515b0c78f','photo-1524504388940-b1c1722653e1','photo-1542596768-5d1d21f1cf98'];
-function wi(i){return 'https://images.unsplash.com/'+WI[i%WI.length]+'?w=600&q=75&auto=format&fit=crop&crop=face'}
-var CDB=[{h:'#FFFFFF',n:'Beyaz'},{h:'#F5F0EB',n:'Krem'},{h:'#E8D5B7',n:'Bej'},{h:'#C9A96E',n:'Altin Mese'},{h:'#8B7355',n:'Ceviz'},{h:'#5C4033',n:'Koyu Ceviz'},{h:'#2C2C2C',n:'Antrasit'},{h:'#1A1A1A',n:'Siyah'},{h:'#4A6741',n:'Koyu Yesil'},{h:'#3B5998',n:'Lacivert'},{h:'#8B0000',n:'Bordo'},{h:'#D4B896',n:'Kum Beji'},{h:'#A0A0A0',n:'Gri'},{h:'#C0C0C0',n:'Gumus'},{h:'#DEB887',n:'Dogal Mese'},{h:'#708090',n:'Fume'},{h:'#E6E0D4',n:'Tas Gri'},{h:'#B8860B',n:'Altin'}];
-function rc(n){var s=CDB.slice().sort(function(){return Math.random()-.5});return s.slice(0,n)}
-
-// Categories
-var cats=[{n:'Banyo Dolaplari',c:'52 Urun',k:'dolap'},{n:'Dusakabinler',c:'24 Urun',k:'dusakabin'},{n:'Aynali Dolaplar',c:'18 Urun',k:'ayna'},{n:'Lavabo Takimlari',c:'15 Urun',k:'lavabo'},{n:'Aksesuarlar',c:'20 Urun',k:'aksesuar'},{n:'Banyo Mobilyasi',c:'12 Urun',k:'mobilya'}];
-document.getElementById('cg').innerHTML=cats.map(function(c,i){return '<div class="cc"><img src="'+bi(i)+'" alt="'+c.n+'" loading="lazy"><div class="cc-i"><h3>'+c.n+'</h3><span>'+c.c+'</span></div></div>'}).join('');
-
-// 100 Products
-var CN={dolap:'Banyo Dolabi',dusakabin:'Dusakabin',ayna:'Aynali Dolap',lavabo:'Lavabo Takimi',aksesuar:'Aksesuar',mobilya:'Mobilya'};
+function bi(i){return 'https://images.unsplash.com/'+BI[i%BI.length]+'?w=500&q=70'}
+var WI=['photo-1616394584738-fc6e612e71b9','photo-1570172619644-dfd03ed5d881','photo-1596755389378-c31d21fd1273','photo-1522337360788-8b13dee7a37e','photo-1512361436605-a484bdb34b5f','photo-1494790108377-be9c29b29330','photo-1531746020798-e6953c6e8e04','photo-1515886657613-9f3515b0c78f'];
+function wi(i){return 'https://images.unsplash.com/'+WI[i%WI.length]+'?w=500&q=70&fit=crop&crop=face'}
+var CD=[{h:'#FFF',n:'Beyaz'},{h:'#F5F0EB',n:'Krem'},{h:'#E8D5B7',n:'Bej'},{h:'#C9A96E',n:'Altin Mese'},{h:'#8B7355',n:'Ceviz'},{h:'#5C4033',n:'Koyu Ceviz'},{h:'#2C2C2C',n:'Antrasit'},{h:'#1A1A1A',n:'Siyah'},{h:'#4A6741',n:'Yesil'},{h:'#3B5998',n:'Lacivert'},{h:'#A0A0A0',n:'Gri'},{h:'#DEB887',n:'Dogal Mese'},{h:'#708090',n:'Fume'},{h:'#B8860B',n:'Altin'}];
+function rc(n){var s=CD.slice().sort(function(){return Math.random()-.5});return s.slice(0,n)}
+var CN={dolap:'Banyo Dolabi',dusakabin:'Dusakabin',ayna:'Aynali Dolap',lavabo:'Lavabo',aksesuar:'Aksesuar',mobilya:'Mobilya'};
 var SN={dolap:['Eleganza','Milano','Verona','Toscana','Napoli','Roma','Firenze','Venezia','Capri','Torino','Modena','Parma','Siena','Bologna','Genova','Pisa','Palermo','Rimini','Perugia','Amalfi','Sorrento','Ravenna','Lecce','Bergamo','Padova','Lucca','Trento','Brescia','Bari','Como'],dusakabin:['Cristallo','Diamond','Prism','Aqua','Crystal','Nova','Pure','Zen','Elite','Royal','Infinity','Luxe','Opal','Pearl','Sapphire','Emerald','Ruby','Onyx','Topaz','Jade'],ayna:['Luminosa','Specchio','Riflesso','Luce','Aurora','Stella','Luna','Sole','Brillante','Chiaro','Nitido','Vivido','Terso','Lucido','Splendido'],lavabo:['Fontana','Cascata','Acqua','Onda','Riviera','Oceano','Lago','Fiume','Sorgente','Marina','Torrente','Ruscello'],aksesuar:['Dettaglio','Raffinato','Sublime','Perfetto','Fino','Elegante','Classico','Moderno','Prezioso','Lusso','Squisito','Regale','Maestoso'],mobilya:['Armonia','Comfort','Serenita','Natura','Essenza','Vivere','Stile','Forma','Lusso','Opera','Grazia','Dolce']};
-var szs=['60cm','80cm','100cm','120cm','150cm'];
-var bgs=['n','s','b',''];
-var AP=[];var pid=0;
-['dolap','dusakabin','ayna','lavabo','aksesuar','mobilya'].forEach(function(cat){
-var cnt=cat==='dolap'?30:cat==='dusakabin'?20:cat==='ayna'?15:cat==='lavabo'?12:cat==='aksesuar'?13:10;
-for(var i=0;i<cnt;i++){
-var srs=SN[cat][i%SN[cat].length];var sz=szs[i%5];
-var bp=cat==='dolap'?[4500,22000]:cat==='dusakabin'?[3500,18000]:cat==='ayna'?[1800,8000]:cat==='lavabo'?[2200,12000]:cat==='aksesuar'?[250,3500]:[3000,15000];
-var pr=Math.round((bp[0]+Math.random()*(bp[1]-bp[0]))/100)*100;
-var hd=Math.random()>.6;var dc=hd?Math.round(10+Math.random()*30):0;var op=hd?Math.round(pr/(1-dc/100)/100)*100:0;
-var bg=i<2?bgs[i%3]:Math.random()>.75?bgs[Math.floor(Math.random()*3)]:'';
-var rt=(4+Math.random()).toFixed(1);var rv=Math.floor(5+Math.random()*120);
-var ins=Math.round(pr/12);var cls=rc(3+Math.floor(Math.random()*4));
-AP.push({id:pid++,cat:cat,sr:srs,sz:sz,pr:pr,op:op,dc:dc,bg:bg,rt:rt,rv:rv,ins:ins,ii:i,cls:cls});
-}});
-var vc=20;
-function rp(f){
-var fl=f==='all'?AP:AP.filter(function(p){return p.cat===f});
-var sh=fl.slice(0,vc);
-document.getElementById('pg').innerHTML=sh.map(function(p){
-return '<div class="pc">'+(p.bg?'<span class="pcb '+p.bg+'">'+(p.bg==='n'?'Yeni':p.bg==='s'?'%'+p.dc:'Cok Satan')+'</span>':'')+'<div class="pci"><img src="'+bi(p.ii)+'" alt="'+p.sr+'" loading="lazy"></div><div class="pcbd"><div class="pcct">'+CN[p.cat]+'</div><div class="pcnm">'+p.sr+' '+p.sz+' '+CN[p.cat]+'</div><div class="pccl">'+p.cls.map(function(c){return '<div class="csw" style="background:'+c.h+'"><span class="tp">'+c.n+'</span></div>'}).join('')+'</div><div class="pcpr"><span class="c">'+p.pr.toLocaleString('tr-TR')+'TL</span>'+(p.op?'<span class="o">'+p.op.toLocaleString('tr-TR')+'TL</span><span class="d">%'+p.dc+'</span>':'')+'</div><div class="pcin">Ayda <b>'+p.ins.toLocaleString('tr-TR')+'TL</b> taksitle</div><div class="pcst">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="cn">'+p.rt+' ('+p.rv+')</span></div></div></div>'}).join('');
-document.getElementById('lm').style.display=vc>=fl.length?'none':'inline-block';
-}
-var fltrs=['all','dolap','dusakabin','ayna','lavabo','aksesuar','mobilya'];
-var fltn=['Tumu','Banyo Dolaplari','Dusakabinler','Aynali Dolaplar','Lavabo','Aksesuar','Mobilya'];
-document.getElementById('pf').innerHTML=fltrs.map(function(f,i){return '<button class="fb'+(f==='all'?' a':'')+'" onclick="sf(\''+f+'\')">'+fltn[i]+'</button>'}).join('');
-function sf(f){vc=20;document.querySelectorAll('.fb').forEach(function(b){b.className='fb'});event.target.className='fb a';rp(f);}
-document.getElementById('lm').onclick=function(){vc+=20;var af=document.querySelector('.fb.a');rp(af?af.textContent==='Tumu'?'all':fltrs[fltn.indexOf(af.textContent)]:'all')};
-rp('all');
-
-// Bestsellers
-var bst=[{n:'Eleganza Aynali Dolap',p:'8.900TL',i:'742TL'},{n:'Luminosa LED Ayna',p:'6.500TL',i:'542TL'},{n:'Milano Lavabo Seti',p:'12.400TL',i:'1.034TL'},{n:'Specchio Akilli Ayna',p:'9.800TL',i:'817TL'},{n:'Aurora Makyaj Aynasi',p:'4.200TL',i:'350TL'},{n:'Brillante Aynali Unite',p:'7.600TL',i:'634TL'},{n:'Stella Premium Ayna',p:'11.200TL',i:'934TL'},{n:'Riflesso Duvar Aynasi',p:'5.800TL',i:'484TL'},{n:'Chiaro LED Set',p:'10.500TL',i:'875TL'},{n:'Vivido Aynali Dolap',p:'8.200TL',i:'684TL'}];
+var AP=[],pid=0;
+['dolap','dusakabin','ayna','lavabo','aksesuar','mobilya'].forEach(function(cat){var cnt=cat==='dolap'?30:cat==='dusakabin'?20:cat==='ayna'?15:cat==='lavabo'?12:cat==='aksesuar'?13:10;for(var i=0;i<cnt;i++){var s=SN[cat][i%SN[cat].length],sz=['60cm','80cm','100cm','120cm','150cm'][i%5],bp=cat==='dolap'?[4500,22000]:cat==='dusakabin'?[3500,18000]:cat==='ayna'?[1800,8000]:cat==='lavabo'?[2200,12000]:cat==='aksesuar'?[250,3500]:[3000,15000],pr=Math.round((bp[0]+Math.random()*(bp[1]-bp[0]))/100)*100,hd=Math.random()>.6,dc=hd?Math.round(10+Math.random()*30):0,op=hd?Math.round(pr/(1-dc/100)/100)*100:0,bg=i<2?['n','s','b'][i%3]:Math.random()>.75?['n','s','b'][Math.floor(Math.random()*3)]:'';AP.push({cat:cat,sr:s,sz:sz,pr:pr,op:op,dc:dc,bg:bg,rt:(4+Math.random()).toFixed(1),rv:Math.floor(5+Math.random()*120),ins:Math.round(pr/12),ii:i,cls:rc(3+Math.floor(Math.random()*3))})}});
+var vc=20,cf='all';
+function rp(){var fl=cf==='all'?AP:AP.filter(function(p){return p.cat===cf}),sh=fl.slice(0,vc);document.getElementById('pg').innerHTML=sh.map(function(p){return '<div class="pc">'+(p.bg?'<span class="pcb '+p.bg+'">'+(p.bg==='n'?'Yeni':p.bg==='s'?'%'+p.dc:'Cok Satan')+'</span>':'')+'<div class="pci"><img src="'+bi(p.ii)+'" alt="'+p.sr+'" loading="lazy"></div><div class="pcbd"><div class="pcct">'+CN[p.cat]+'</div><div class="pcnm">'+p.sr+' '+p.sz+'</div><div class="pccl">'+p.cls.map(function(c){return '<div class="csw" style="background:'+c.h+'"><span class="tp">'+c.n+'</span></div>'}).join('')+'</div><div class="pcpr"><span class="c">'+p.pr.toLocaleString('tr-TR')+'TL</span>'+(p.op?'<span class="o">'+p.op.toLocaleString('tr-TR')+'TL</span><span class="d">%'+p.dc+'</span>':'')+'</div><div class="pcin">Ayda <b>'+p.ins.toLocaleString('tr-TR')+'TL</b> taksitle</div><div class="pcst">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="cn">'+p.rt+' ('+p.rv+')</span></div></div></div>'}).join('');document.getElementById('lm').style.display=vc>=fl.length?'none':'inline-block'}
+var fltrs=[['all','Tumu'],['dolap','Dolaplar'],['dusakabin','Dusakabin'],['ayna','Ayna'],['lavabo','Lavabo'],['aksesuar','Aksesuar'],['mobilya','Mobilya']];
+document.getElementById('pf').innerHTML=fltrs.map(function(f){return '<button class="fb'+(f[0]==='all'?' a':'')+'" onclick="sf(this,\''+f[0]+'\')">'+f[1]+'</button>'}).join('');
+function sf(el,f){cf=f;vc=20;document.querySelectorAll('.fb').forEach(function(b){b.className='fb'});el.className='fb a';rp()}
+function moreP(){vc+=20;rp()}
+rp();
+var bst=[{n:'Eleganza Aynali Dolap',p:'8.900TL',i:'742TL'},{n:'Luminosa LED Ayna',p:'6.500TL',i:'542TL'},{n:'Milano Lavabo Seti',p:'12.400TL',i:'1.034TL'},{n:'Specchio Akilli Ayna',p:'9.800TL',i:'817TL'},{n:'Aurora Makyaj Aynasi',p:'4.200TL',i:'350TL'},{n:'Brillante Unite',p:'7.600TL',i:'634TL'},{n:'Stella Premium',p:'11.200TL',i:'934TL'},{n:'Riflesso Ayna',p:'5.800TL',i:'484TL'}];
 document.getElementById('bs').innerHTML=bst.map(function(b,i){return '<div class="bcd"><div class="bcd-i"><img src="'+wi(i)+'" alt="'+b.n+'" loading="lazy"><span class="bcd-tg">Cok Satan</span></div><div class="bcd-b"><h3>'+b.n+'</h3><div class="pr">'+b.p+'</div><div class="in">Ayda <b>'+b.i+'</b> taksitle</div></div></div>'}).join('');
-
-// Services
-var svs=[{i:'&#128208;',t:'Ucretsiz Kesif',d:'Uzman ekibimiz evinize gelir'},{i:'&#128421;',t:'3D Tasarim',d:'Fotorealistik gorsellestirme'},{i:'&#127981;',t:'Ozel Uretim',d:'cm bazinda hassas olcu'},{i:'&#128295;',t:'Profesyonel Montaj',d:'2 yil montaj garantisi'},{i:'&#128666;',t:'Ucretsiz Kargo',d:'2.000TL uzeri tum Turkiye'},{i:'&#128179;',t:'12 Ay Taksit',d:'Vade farksiz taksit'},{i:'&#128260;',t:'14 Gun Iade',d:'Kosulsuz iade veya degisim'},{i:'&#128737;',t:'10 Yil Garanti',d:'Omur boyu yedek parca'}];
-document.getElementById('svgr').innerHTML=svs.map(function(s){return '<div class="svc"><span class="ic">'+s.i+'</span><h3>'+s.t+'</h3><p>'+s.d+'</p></div>'}).join('');
-
-// Gallery
-var gld=[{t:'Bebek Villa',g:'Villa'},{t:'Nisantasi Suite',g:'Daire'},{t:'Bosphorus Grand',g:'Otel'},{t:'Etiler Residence',g:'Residence'},{t:'Cesme Yazlik',g:'Villa'},{t:'Bodrum Marina',g:'Butik Otel'}];
-document.getElementById('gg').innerHTML=gld.map(function(g,i){return '<div class="gi"><img src="'+bi(i+2)+'" alt="'+g.t+'" loading="lazy"><div class="gi-l"><span>'+g.g+'</span><h4>'+g.t+'</h4></div></div>'}).join('');
-
-// Reviews
-var rvs=[
-{n:'Ayse Yilmaz',l:'Istanbul',t:'Dolap kalitesi mukemmel. Montaj ekibi profesyonel.',a:'AY'},
-{n:'Mehmet Kaya',l:'Ankara',t:'3D tasarim sayesinde banyomu onceden gorebildim.',a:'MK'},
-{n:'Selin Demir',l:'Izmir',t:'6 banyo yaptirdik. Ozel olcu uretim harika.',a:'SD'},
-{n:'Ali Ozturk',l:'Bursa',t:'Nano kaplamali dusakabin aldik, su lekesi kalmiyor.',a:'AO'},
-{n:'Zeynep Arslan',l:'Antalya',t:'Eleganza serisi harika. Soft-close cok sessiz.',a:'ZA'},
-{n:'Burak Sahin',l:'Istanbul',t:'Ucretsiz kesif ekibi geldi, 3 gunde tasarim hazirdi.',a:'BS'},
-{n:'Fatma Celik',l:'Ankara',t:'Otel projemiz icin toplu siparis. Zamaninda teslim.',a:'FC'},
-{n:'Hakan Yildiz',l:'Izmir',t:'LED aynali dolap aldik, bugu onleme harika.',a:'HY'},
-{n:'Deniz Acar',l:'Mugla',t:'Cristallo dusakabin mukemmel. 10mm cam cok saglam.',a:'DA'},
-{n:'Elif Koc',l:'Istanbul',t:'Milano serisi mese kaplama cok dogal gorunuyor.',a:'EK'},
-{n:'Cem Yavuz',l:'Ankara',t:'Ozel olcu uretim banyoya bicilmis kaftan.',a:'CY'},
-{n:'Gul Ozkan',l:'Antalya',t:'14 gun iade garantisi guven verdi. Urun cok guzel.',a:'GO'},
-{n:'Murat Aktas',l:'Istanbul',t:'CardFinans ile 6 taksit yaptik. Super hizmet.',a:'MA'},
-{n:'Sibel Erdogan',l:'Bursa',t:'Luminosa aynali dolap hayatimi degistirdi.',a:'SE'},
-{n:'Tolga Kilic',l:'Izmir',t:'Kargo hizli, paketleme ozenli. Kalite cok iyi.',a:'TK'},
-{n:'Aylin Sari',l:'Istanbul',t:'Showroom ziyareti ettik, cok yardimci oldular.',a:'AS'}
-];
-var rvHTML=rvs.map(function(r){return '<div class="rvc"><div class="s">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="tx">"'+r.t+'"</div><div class="au"><div class="av">'+r.a+'</div><div><div class="nm2">'+r.n+'</div><div class="lc">'+r.l+'</div></div></div></div>'}).join('');
-document.getElementById('rvt').innerHTML=rvHTML+rvHTML;
-// 200 Blog Posts
+document.getElementById('svgr').innerHTML=[{i:'&#128208;',t:'Ucretsiz Kesif',d:'Uzman ekibimiz evinize gelir'},{i:'&#128421;',t:'3D Tasarim',d:'Fotorealistik gorsellestirme'},{i:'&#127981;',t:'Ozel Uretim',d:'cm bazinda hassas olcu'},{i:'&#128295;',t:'Profesyonel Montaj',d:'2 yil montaj garantisi'},{i:'&#128666;',t:'Ucretsiz Kargo',d:'2.000TL uzeri Turkiye geneli'},{i:'&#128179;',t:'12 Ay Taksit',d:'Vade farksiz taksit'},{i:'&#128260;',t:'14 Gun Iade',d:'Kosulsuz iade/degisim'},{i:'&#128737;',t:'10 Yil Garanti',d:'Omur boyu yedek parca'}].map(function(s){return '<div class="svc"><span class="ic">'+s.i+'</span><h3>'+s.t+'</h3><p>'+s.d+'</p></div>'}).join('');
+var rvs=[{n:'Ayse Y.',l:'Istanbul',t:'Dolap kalitesi mukemmel. Montaj ekibi profesyonel.',a:'AY'},{n:'Mehmet K.',l:'Ankara',t:'3D tasarim ile banyomu onceden gordum. Harika.',a:'MK'},{n:'Selin D.',l:'Izmir',t:'6 banyo yaptirdik. Ozel olcu uretim rakipsiz.',a:'SD'},{n:'Ali O.',l:'Bursa',t:'Nano kaplamali dusakabin. Su lekesi kalmiyor.',a:'AO'},{n:'Zeynep A.',l:'Antalya',t:'Eleganza serisi harika. Soft-close sessiz.',a:'ZA'},{n:'Burak S.',l:'Istanbul',t:'Ucretsiz kesif geldi, 3 gunde 3D tasarim.',a:'BS'},{n:'Fatma C.',l:'Ankara',t:'Otel projesi icin toplu siparis. Zamaninda.',a:'FC'},{n:'Hakan Y.',l:'Izmir',t:'LED aynali dolap. Bugu onleme harika.',a:'HY'},{n:'Deniz A.',l:'Mugla',t:'Cristallo dusakabin. 10mm cam cok saglam.',a:'DA'},{n:'Elif K.',l:'Istanbul',t:'Milano mese kaplama cok dogal gorunuyor.',a:'EK'},{n:'Cem Y.',l:'Ankara',t:'Ozel olcu uretim banyoya bicilmis kaftan.',a:'CY'},{n:'Gul O.',l:'Antalya',t:'14 gun iade garantisi guven verdi.',a:'GO'},{n:'Murat A.',l:'Istanbul',t:'6 taksit yaptik. Montaj ayni gun.',a:'MA'},{n:'Sibel E.',l:'Bursa',t:'Luminosa dolap hayatimi degistirdi.',a:'SE'},{n:'Tolga K.',l:'Izmir',t:'Kargo hizli, paketleme ozenli.',a:'TK'},{n:'Aylin S.',l:'Istanbul',t:'Showroom ziyareti ettik. Cok yardimci.',a:'AS'}];
+var rh=rvs.map(function(r){return '<div class="rvc"><div class="s">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="tx">"'+r.t+'"</div><div class="au"><div class="av">'+r.a+'</div><div><div class="n2">'+r.n+'</div><div class="lc">'+r.l+'</div></div></div></div>'}).join('');
+document.getElementById('rvt').innerHTML=rh+rh;
 var BP=[
-['2026 Banyo Trendleri: Dogallik ve Minimalizm','Trendler','banyo trendleri,minimalist'],
-['Kucuk Banyolar Icin 15 Akilli Depolama Cozumu','Rehber','kucuk banyo,depolama'],
-['Dusakabin Secerken 7 Kriter','Rehber','dusakabin,cam dusakabin'],
-['Banyo Dolabi Bakimi: Omrunu 2 Katina Cikarin','Ipucu','dolap bakim,temizlik'],
-['LED Aynali Dolap Alim Rehberi','Rehber','aynali dolap,LED ayna'],
-['Banyo Yenileme Maliyeti 2026','Rehber','banyo yenileme,maliyet'],
-['Modern Banyo Dolabi Modelleri ve Fiyatlari','Urun','modern dolap,fiyat'],
-['Dusakabin Temizligi: Kirec Lekesi Nasil Cikar','Ipucu','dusakabin temizlik,kirec'],
-['Banyoda Renk Secimi Rehberi','Dekorasyon','banyo renk,dekorasyon'],
-['Kose Dusakabin mi Duz Panel mi?','Karsilastirma','kose dusakabin,duz panel'],
-['Banyo Dolabi Olculeri Rehberi','Rehber','dolap olcu,60cm 80cm'],
-['Walk-in Dusakabin Nedir?','Rehber','walk-in,acik dusakabin'],
-['Banyo Aydinlatma Fikirleri','Dekorasyon','LED aydinlatma,spot'],
-['Mermer Banyo Tezgahi: Dogal vs Yapay','Karsilastirma','mermer tezgah,dogal'],
-['Banyo Dolabi Renk Trendleri 2026','Trendler','dolap renk,mat siyah'],
-['Dar Banyo Tasarim Fikirleri: 20 Proje','Ilham','dar banyo,tasarim'],
-['Banyo Fayansi Secimi: Seramik vs Porselen','Rehber','fayans,seramik,porselen'],
-['Soft-Close Mentese Nedir?','Bilgi','soft-close,mentese'],
-['Banyo Dolabi Alti Lavabo Secimi','Rehber','lavabo,tezgah alti'],
-['10mm vs 8mm Dusakabin Cami','Karsilastirma','temperli cam,10mm'],
-['Banyo Tadilat Sureci: Adim Adim','Rehber','tadilat,yenileme'],
-['Nano Kaplama Teknolojisi Nedir?','Bilgi','nano kaplama,kolay temizlik'],
-['Banyo Aksesuarlari Secim Rehberi','Rehber','aksesuar,havluluk'],
-['Kuvet vs Dusakabin Karsilastirma','Karsilastirma','kuvet,dusakabin'],
-['Banyo Dolabi Malzeme: MDF Laminat Lake','Rehber','MDF,laminat,lake'],
-['Banyoda Ahsap Kullanimi','Ipucu','ahsap banyo,dogal'],
-['Engelli ve Yasli Dostu Banyo','Rehber','engelsiz banyo,bariyer free'],
-['Banyo Havalandirma Sistemleri','Rehber','havalandirma,aspirator'],
-['Italyan Banyo Tasarim Trendleri','Ilham','Italyan,Milano'],
-['Banyo Dolabi Aydinlatmasi: LED','Rehber','LED dolap,alt aydinlatma'],
-['Dusakabin Profil Cesitleri','Rehber','krom profil,mat siyah'],
-['Banyo Zemin Isitma Sistemi','Bilgi','yerden isitma,sicak zemin'],
-['Cift Lavabolu Banyo Dolabi','Rehber','cift lavabo,genis dolap'],
-['Banyo Dolabi Kulp Secimi: 50 Model','Ilham','kulp modelleri,detay'],
-['Duvar Tipi vs Ayakli Dolap','Karsilastirma','asma dolap,ayakli'],
-['Banyo Seramik Trendleri 2026','Trendler','seramik trend,buyuk format'],
-['Aynali Dolap mi Ayri Ayna mi?','Karsilastirma','aynali dolap,ayna'],
-['Banyoda Cam Mozaik Kullanimi','Dekorasyon','cam mozaik,dekoratif'],
-['Tezgah Malzemeleri: Corian Mermer Seramik','Karsilastirma','Corian,tezgah'],
-['Dus Basligi Secimi Rehberi','Rehber','dus basligi,yagmur dus'],
-['Banyo Mobilyasi: Boy Dolap ve Raf','Rehber','boy dolap,raf unitesi'],
-['Mat Lake vs Parlak Lake Dolap','Karsilastirma','mat lake,parlak lake'],
-['Banyoda Bitki Dekorasyonu','Dekorasyon','banyo bitki,yesil'],
-['Banyo Batarya Secimi: Termostatik','Rehber','batarya,termostatik'],
-['3D Banyo Tasarim Programlari','Bilgi','3D tasarim,program'],
-['Banyo Dolabi Siparis Sureci','Rehber','siparis,montaj surec'],
-['Antrasit Banyo Dekorasyonu','Dekorasyon','antrasit,koyu banyo'],
-['Dusakabin Montaji: DIY vs Profesyonel','Ipucu','montaj,kendin yap'],
-['Pencereli Banyolar Icin Tasarim','Ilham','pencereli banyo,dogal isik'],
-['Su Tasarruflu Banyo Urunleri','Bilgi','su tasarrufu,eko banyo'],
-['Banyo Dolabi Garantisi Rehberi','Rehber','garanti,kapsam'],
-['Beyaz Banyo Dekorasyonu','Dekorasyon','beyaz banyo,sade'],
-['Push-to-Open Sistemi Nedir?','Bilgi','push-to-open,kulpsuz'],
-['Luks Otel Banyosu Estetigi','Ilham','luks banyo,otel'],
-['Dolap Fiyatlarini Etkileyen 8 Faktor','Rehber','fiyat,karsilastirma'],
-['Tezgah Ustu vs Entegre Lavabo','Karsilastirma','entegre lavabo,tezgah ustu'],
-['Banyoda Nis Kullanimi','Ipucu','duvar nis,raf'],
-['Dolap Montaj Hatalarini Onleyin','Ipucu','montaj hatasi,kurulum'],
-['Bej ve Krem Tonlarda Banyo','Dekorasyon','bej banyo,sicak tonlar'],
-['Alman Ray Sistemi Nedir?','Bilgi','Alman ray,cekmece'],
-['Banyoda Ayna Yerlestirme Kurallari','Ipucu','ayna boyut,yukseklik'],
-['Cocuk Banyosu Tasarimi','Ilham','cocuk banyosu,guvenli'],
-['Dolap mi Etajer mi?','Karsilastirma','etajer,depolama'],
-['Dusakabin Sizdirmazlik Cozumleri','Ipucu','sizdirmazlik,conta'],
-['Banyo Halisi Secimi','Rehber','banyo halisi,kaymaz'],
-['Dolap Organizasyon Ipuclari','Ipucu','organizasyon,duzen'],
-['Rustik Banyo Tasarimi','Ilham','rustik,ahsap tas'],
-['Banyo Yenileme Oncesi 10 Soru','Rehber','yenileme,checklist'],
-['Dusakabin Kapi Tipleri','Karsilastirma','surgulu,menteseli,katlanir'],
-['Banyo Aydinlatma IP Korumalari','Bilgi','IP koruma,guvenli'],
-['Japon Banyo Kulturu ve Minimalizm','Ilham','Japon,zen banyo'],
-['Dolap Boyama DIY Rehber','Ipucu','dolap boyama,yenileme'],
-['Frameless Dusakabin Estetigi','Urun','frameless,cercevesiz'],
-['Banyoda Altin Detaylar','Trendler','altin batarya,gold'],
-['Seramik Derz Temizligi','Ipucu','derz temizlik,fayans'],
-['Gomme Dolap Cozumleri','Rehber','gomme dolap,duvar ici'],
-['Banyo Radyatoru Secimi','Rehber','radyator,havlu kurutucu'],
-['Smart Banyo Teknolojileri','Bilgi','akilli banyo,sensor'],
-['Banyo Kapisi Secimi','Rehber','banyo kapisi,PVC cam'],
-['Tezgah Ustu Lavabo 30 Model','Ilham','tezgah ustu,tasarim lavabo'],
-['Gizli Depolama Fikirleri','Ipucu','gizli depolama,hack'],
-['Ideal Tezgah Yuksekligi','Bilgi','tezgah yukseklik,ergonomi'],
-['Dus Icin Su Gideri Secimi','Rehber','kanal gider,nokta suzgec'],
-['Aydinlatmada Renk Sicakligi','Bilgi','Kelvin,renk sicakligi'],
-['Scandinavian Tarz Banyo','Ilham','Iskandinav,nordik'],
-['Dolap Alirken 7 Hata','Ipucu','hata,dikkat'],
-['Otel Konseptiyle Ev Banyosu','Ilham','otel konsept,spa'],
-['Petek Karo Kullanimi','Dekorasyon','petek karo,hexagon'],
-['Dolap Arkalik Secenekleri','Bilgi','arkalik,sirt panel'],
-['Dusakabin Cam Desenleri','Rehber','buzlu cam,seffaf'],
-['Sage Green Banyo Trendi','Trendler','yesil banyo,sage green'],
-['Ust Dolap Gerekli mi?','Karsilastirma','ust dolap,depolama'],
-['Ahsap Gorunumlu Seramik','Dekorasyon','ahsap seramik,wood look'],
-['Dar Dusakabin 70cm 80cm','Urun','dar dusakabin,kucuk'],
-['Vinyl Zemin Kaplama','Rehber','vinyl,LVT banyo'],
-['Cekmece Duzenleyicileri','Ipucu','cekmece,organizator'],
-['Dus Teknesi vs Dus Zemini','Karsilastirma','dus teknesi,flush'],
-['Ayna Arkasi LED DIY','Ipucu','LED serit,DIY'],
-['Endustriyel Tarz Banyo','Ilham','beton,metal,endustriyel'],
-['Tezgah Tasma Payi Hesaplama','Bilgi','tezgah olcu,tasma payi'],
-['Acik Raf Dekorasyonu','Dekorasyon','acik raf,dekoratif'],
-['Ayna Kapak Dolap Secenekleri','Rehber','ayna kapak,ozel'],
-['Yagmur Dus Sistemi Kurulumu','Rehber','yagmur dus,tavan dusu'],
-['Banyo Boyasi Secimi','Rehber','banyo boyasi,kuf onleyici'],
-['Terrazzo Trendi Banyoda','Trendler','terrazzo,retro modern'],
-['Online Siparis Rehberi','Rehber','online siparis,internet'],
-['Dusakabin Aylik Bakim Rutini','Ipucu','dusakabin bakim,conta'],
-['Camasir Makinesi Dolap Cozumu','Urun','camasir makinesi,gizli'],
-['Lavabo Batarya Tipleri','Rehber','lavabo batarya,tek kollu'],
-['Neon Aydinlatma Trendi','Trendler','neon,dekoratif isik'],
-['Mentese Ayari Nasil Yapilir?','Ipucu','mentese ayar,kapak'],
-['Art Deco Banyo Tasarimi','Ilham','art deco,geometrik'],
-['Duvar Paneli: Fayans Alternatifi','Rehber','PVC panel,duvar'],
-['Dolap Ic Aksesuar Secenekleri','Urun','ic aksesuar,cekmece'],
-['Mikro Cimento Kaplama','Trendler','mikro cimento,derzsiz'],
-['Dolap Kalite Kontrolu','Rehber','kalite kontrol,test'],
-['Dusakabin Baskili Cam','Urun','baskili cam,desenli'],
-['Havlu Askiligi Montaj','Rehber','havlu askilik,aksesuar'],
-['Banyoda Tas Kaplama','Dekorasyon','tas kaplama,dogal tas'],
-['Dolap Kapak Tipleri','Rehber','kapakli,cekmeceli'],
-['Banyo Tavan Tasarimi','Dekorasyon','asma tavan,lambiri'],
-['Dolap ve Dusakabin Set Alimi','Rehber','set alim,kombi'],
-['Minimalist Banyo: Az Coktur','Ilham','minimalist,sade'],
-['Gider Tikanikligi Onleme','Ipucu','gider,boru acma'],
-['Dolap Sirt Aydinlatmasi','Rehber','ambiyans,LED arka'],
-['Banyoda Duvar Kagidi','Bilgi','duvar kagidi,su gecirmez'],
-['Dolap Ayak Secenekleri','Rehber','metal ayak,gomme'],
-['Renovasyon Zamanlama','Rehber','renovasyon,mevsim'],
-['Dusakabin Zemini Hazirligi','Rehber','zemin hazirlik,yalitim'],
-['Gri Tonlarda Banyo','Dekorasyon','gri banyo,fume'],
-['Dolap Ic Aydinlatma','Urun','ic LED,otomatik isik'],
-['Mermer Gorunumlu Seramik','Dekorasyon','mermer seramik,marble'],
-['Yerli vs Ithal Dolap Markalari','Karsilastirma','yerli,ithal,marka'],
-['Aydinlatma Katmanlari','Rehber','genel,gorev,dekoratif'],
-['Dolap Raf Malzemeleri','Rehber','cam raf,ayarlanabilir'],
-['Dusakabin Alan Hesaplama','Bilgi','minimum olcu,ideal'],
-['Vintage Tarz Banyo','Ilham','vintage,retro'],
-['Dolap Renk Uyumu Nasil Saglanir?','Ipucu','renk uyumu,dolap'],
-['Su Yalitimi A-Z Rehber','Rehber','su yalitim,izolasyon'],
-['Aydınlatmali Ayna Entegrasyonu','Urun','aydınlatmali,entegre'],
-['Renk Psikolojisi Banyoda','Bilgi','renk psikoloji,mavi'],
-['Dolap Nakliye Ipuclari','Ipucu','nakliye,tasima'],
-['Fotosel Aydinlatma','Bilgi','fotosel,hareket sensor'],
-['Simetri ve Asimetri Banyoda','Dekorasyon','simetrik,asimetrik'],
-['Dolap Fiyat Listesi 2026','Rehber','fiyat listesi,guncel'],
-['Surdurulebilir Banyo','Bilgi','eko,cevre dostu'],
-['En Iyi 10 Renk Kombinasyonu','Ilham','renk kombinasyon,uyum'],
-['Dusakabin Cami Kirilir mi?','Bilgi','temperli,guvenlik'],
-['Kuf Olusumunu Onleme','Ipucu','kuf onleme,nem'],
-['Tadilat Butcesi Nasil Planlanir?','Rehber','butce,maliyet planlama'],
-['Mozaik Bordur Kullanimi','Dekorasyon','mozaik bordur,serit'],
-['Ayna Isitici Bugu Cozucu','Bilgi','ayna isitici,anti-fog'],
-['Dogal Isik Maksimizasyonu','Ipucu','dogal isik,aydınlik'],
-['Cam Kapak Dolap Secenekleri','Urun','cam kapak,vitrin'],
-['Wabi-Sabi Tarz Banyo','Ilham','wabi-sabi,organik'],
-['Dolap Silikon Uygulamasi','Ipucu','silikon,su gecirmez'],
-['Dusakabin Surgu Bakimi','Ipucu','surgu,ray temizlik'],
-['Pembe Tonlar Banyoda','Trendler','pembe,blush pink'],
-['Dolap Numune Talebi','Rehber','numune,renk ornegi'],
-['Siyah-Beyaz Kontrast Banyo','Dekorasyon','siyah beyaz,monokrom'],
-['Entegre Priz ve USB Sarj','Urun','priz,USB sarj'],
-['Enerji Verimliligi Rehberi','Bilgi','enerji,tasarruf LED'],
-['Seramik Lavabo Tamiri','Ipucu','seramik tamir,onarim'],
-['Teak Ahsap Banyoda','Dekorasyon','teak,tropikal ahsap'],
-['Dusakabin Esik Profili','Rehber','esik profil,su bariyeri'],
-['Granit Tezgah Kullanimi','Dekorasyon','granit,dogal tas'],
-['Camasir Sepeti Entegrasyonu','Urun','camasir sepeti,gizli'],
-['Aromaterapi Buhar Sistemi','Bilgi','aromaterapi,spa dus'],
-['Lacivert Altin Kombinasyonu','Dekorasyon','lacivert,navy gold'],
-['Dolap Kapak Degisimi','Ipucu','kapak degisimi,ekonomik'],
-['Futuristik Banyo 2030','Trendler','futuristik,teknoloji'],
-['Dolap Uretim Yapistiricilari','Bilgi','yapistirici,PVA'],
-['Epoksi Zemin Kaplama','Trendler','epoksi,recine'],
-['Bluetooth Hoparlor Dolap','Urun','bluetooth,muzik'],
-['Bakir Aksesuar Trendi','Trendler','bakir,copper'],
-['Buyuk Format Seramik','Dekorasyon','buyuk format,120x60'],
-['Acik Dus Walk-Through','Ilham','acik dus,kapisiz'],
-['PET Akrilik Melamin Kaplama','Bilgi','PET,akrilik,melamin'],
-['Alcipan Duvar Nem Direnci','Rehber','alcipan,yesil alcipan'],
-['Feng Shui Banyo Kurallari','Ilham','feng shui,enerji'],
-['Traverten Kullanimi','Dekorasyon','traverten,dogal tas'],
-['Soft-Close Mekanizma Degisimi','Ipucu','mekanizma,mentese degisim'],
-['Makyaj Alani Tasarimi','Ilham','makyaj alani,vanity'],
-['Dolap Uretim Sureci','Bilgi','uretim,fabrika'],
-['Sun Tunnel Dogal Isik','Bilgi','sun tunnel,penceresiz'],
-['Ozel Siparis Suresi','Rehber','ozel siparis,teslimat'],
-['Otomatik Koku Giderici','Urun','koku giderici,hijyen'],
-['Tezgah Entegre Sabunluk','Urun','sabunluk,gomme'],
-['Siyah Batarya Trendi','Trendler','siyah batarya,mat'],
-['Su Hasari Durumunda Ne Yapmali?','Rehber','su hasari,acil'],
-['Akustik Panel Banyoda','Bilgi','akustik,ses yalitim'],
-['Katalog Inceleme Rehberi','Rehber','katalog,karsilastirma'],
-['Termal Banyo Evde Spa','Ilham','termal,buhar,spa'],
-['Karbon Ayak Izi ve Dolap','Bilgi','karbon,surdurulebilir'],
-['Dijital Banyo Termostati','Urun','dijital termostat,akilli'],
-['Showroom Ziyaret Rehberi','Rehber','showroom,magaza'],
-['Mozaik Zemin Tasarimi','Dekorasyon','mozaik zemin,desen']
+['2026 Banyo Trendleri','Trendler','banyo trendleri,minimalist'],['Kucuk Banyo Depolama','Rehber','kucuk banyo,depolama'],['Dusakabin Secim 7 Kriter','Rehber','dusakabin,cam'],['Dolap Bakimi Rehberi','Ipucu','dolap bakim,temizlik'],['LED Aynali Dolap Rehberi','Rehber','aynali dolap,LED'],['Banyo Yenileme Maliyeti','Rehber','yenileme,maliyet'],['Modern Dolap Modelleri','Urun','modern dolap,fiyat'],['Dusakabin Temizligi','Ipucu','dusakabin temizlik,kirec'],['Banyoda Renk Secimi','Dekorasyon','renk,dekorasyon'],['Kose vs Duz Panel Dusakabin','Karsilastirma','kose,duz panel'],
+['Dolap Olculeri Rehberi','Rehber','olcu,60cm 80cm'],['Walk-in Dusakabin','Rehber','walk-in,acik'],['Banyo Aydinlatma','Dekorasyon','LED,spot'],['Mermer Tezgah Secimi','Karsilastirma','mermer,dogal'],['Dolap Renk Trendleri','Trendler','renk,mat siyah'],['Dar Banyo 20 Fikir','Ilham','dar banyo,tasarim'],['Seramik vs Porselen','Rehber','fayans,seramik'],['Soft-Close Mentese','Bilgi','soft-close,mentese'],['Lavabo Secim Rehberi','Rehber','lavabo,tezgah alti'],['10mm vs 8mm Cam','Karsilastirma','cam,temperli'],
+['Tadilat Adim Adim','Rehber','tadilat,yenileme'],['Nano Kaplama Nedir','Bilgi','nano,kolay temizlik'],['Aksesuar Secimi','Rehber','aksesuar,havluluk'],['Kuvet vs Dusakabin','Karsilastirma','kuvet,dusakabin'],['MDF Laminat Lake','Rehber','MDF,laminat'],['Ahsap Banyo Kullanimi','Ipucu','ahsap,dogal'],['Engelsiz Banyo','Rehber','engelsiz,yasli dostu'],['Havalandirma Sistemi','Rehber','havalandirma,aspirator'],['Italyan Banyo Trendi','Ilham','Italyan,Milano'],['Dolap LED Aydinlatma','Rehber','LED dolap,alt isik'],
+['Profil Cesitleri','Rehber','krom,mat siyah profil'],['Yerden Isitma','Bilgi','yerden isitma,zemin'],['Cift Lavabolu Dolap','Rehber','cift lavabo,genis'],['Kulp Secimi 50 Model','Ilham','kulp,dolap detay'],['Asma vs Ayakli Dolap','Karsilastirma','asma,ayakli'],['Seramik Trend 2026','Trendler','seramik,buyuk format'],['Aynali Dolap vs Ayna','Karsilastirma','aynali dolap,ayna'],['Cam Mozaik Banyo','Dekorasyon','mozaik,dekoratif'],['Tezgah Malzemeleri','Karsilastirma','Corian,mermer'],['Dus Basligi Secimi','Rehber','dus basligi,yagmur'],
+['Boy Dolap ve Raf','Rehber','boy dolap,raf'],['Mat vs Parlak Lake','Karsilastirma','mat,parlak'],['Banyo Bitkileri','Dekorasyon','bitki,yesil'],['Termostatik Batarya','Rehber','batarya,termostatik'],['3D Tasarim Programi','Bilgi','3D tasarim,program'],['Siparis Sureci','Rehber','siparis,montaj'],['Antrasit Dekorasyon','Dekorasyon','antrasit,koyu'],['DIY vs Profesyonel','Ipucu','montaj,kendin yap'],['Pencereli Banyo','Ilham','pencereli,dogal isik'],['Su Tasarrufu Urunleri','Bilgi','su tasarrufu,eko'],
+['Garanti Rehberi','Rehber','garanti,kapsam'],['Beyaz Banyo Dekoru','Dekorasyon','beyaz,sade'],['Push-to-Open Nedir','Bilgi','push-to-open,kulpsuz'],['Otel Banyo Estetigi','Ilham','luks,otel'],['Fiyat Etkileyen 8 Faktor','Rehber','fiyat,karsilastirma'],['Entegre vs Ustu Lavabo','Karsilastirma','entegre,tezgah ustu'],['Duvar Nis Kullanimi','Ipucu','nis,duvar raf'],['Montaj Hatalari','Ipucu','montaj hatasi,kurulum'],['Bej Krem Tonlar','Dekorasyon','bej,sicak tonlar'],['Alman Ray Sistemi','Bilgi','Alman ray,cekmece'],
+['Ayna Yerlestirme','Ipucu','ayna boyut,yukseklik'],['Cocuk Banyosu','Ilham','cocuk,guvenli'],['Dolap vs Etajer','Karsilastirma','etajer,depolama'],['Sizdirmazlik Cozum','Ipucu','sizdirmazlik,conta'],['Banyo Halisi Secimi','Rehber','halisi,kaymaz'],['Dolap Organizasyon','Ipucu','organizasyon,duzen'],['Rustik Banyo','Ilham','rustik,ahsap tas'],['Yenileme 10 Soru','Rehber','yenileme,checklist'],['Kapi Tipleri','Karsilastirma','surgulu,menteseli'],['IP Koruma Sinifi','Bilgi','IP koruma,guvenli'],
+['Japon Zen Banyo','Ilham','Japon,zen'],['Dolap Boyama DIY','Ipucu','boyama,yenileme'],['Frameless Dusakabin','Urun','frameless,cercevesiz'],['Altin Detaylar','Trendler','altin,gold'],['Derz Temizligi','Ipucu','derz,fayans bakim'],['Gomme Dolap','Rehber','gomme,duvar ici'],['Radyator Secimi','Rehber','radyator,havlu kurutucu'],['Smart Banyo','Bilgi','akilli,sensor'],['Banyo Kapisi','Rehber','kapi,PVC cam'],['Lavabo 30 Model','Ilham','tezgah ustu,tasarim'],
+['Gizli Depolama','Ipucu','gizli,hack'],['Tezgah Yuksekligi','Bilgi','yukseklik,ergonomi'],['Su Gideri Secimi','Rehber','kanal gider,suzgec'],['Renk Sicakligi','Bilgi','Kelvin,isik'],['Iskandinav Banyo','Ilham','Iskandinav,nordik'],['Dolap 7 Hata','Ipucu','hata,dikkat'],['Otel Konsepti','Ilham','otel,spa'],['Petek Karo','Dekorasyon','hexagon,petek'],['Arkalik Malzeme','Bilgi','arkalik,sirt'],['Cam Desenleri','Rehber','buzlu,seffaf'],
+['Sage Green Trendi','Trendler','yesil,sage green'],['Ust Dolap Gerekli mi','Karsilastirma','ust dolap,depolama'],['Ahsap Seramik','Dekorasyon','ahsap seramik,wood'],['70cm 80cm Dusakabin','Urun','dar,kucuk'],['Vinyl Zemin','Rehber','vinyl,LVT'],['Cekmece Duzenleyici','Ipucu','cekmece,organizator'],['Dus Teknesi vs Zemin','Karsilastirma','tekne,flush'],['Ayna Arkasi LED','Ipucu','LED serit,DIY'],['Endustriyel Banyo','Ilham','beton,metal'],['Tezgah Tasma Payi','Bilgi','olcu,tasma'],
+['Acik Raf Dekor','Dekorasyon','acik raf,dekoratif'],['Ayna Kapak Dolap','Rehber','ayna kapak,ozel'],['Yagmur Dus Kurulum','Rehber','yagmur dus,tavan'],['Banyo Boyasi','Rehber','boya,kuf onleyici'],['Terrazzo Trendi','Trendler','terrazzo,retro'],['Online Siparis','Rehber','online,internet'],['Dusakabin Bakim Rutin','Ipucu','bakim,conta'],['Camasir Makinesi Dolap','Urun','camasir,gizli'],['Batarya Tipleri','Rehber','batarya,tek kollu'],['Neon Aydinlatma','Trendler','neon,dekoratif'],
+['Mentese Ayari','Ipucu','mentese,kapak'],['Art Deco Banyo','Ilham','art deco,geometrik'],['Duvar Paneli','Rehber','PVC panel,fayans alt'],['Ic Aksesuar','Urun','ic aksesuar,cekmece'],['Mikro Cimento','Trendler','mikro cimento,derzsiz'],['Kalite Kontrol','Rehber','kalite,test'],['Baskili Cam','Urun','baskili,desenli'],['Havlu Askilik','Rehber','havlu,aksesuar'],['Tas Kaplama','Dekorasyon','tas,dogal'],['Kapak Tipleri','Rehber','kapakli,cekmeceli'],
+['Tavan Tasarimi','Dekorasyon','tavan,lambiri'],['Set Alim Avantaji','Rehber','set,kombi'],['Minimalist Banyo','Ilham','minimalist,sade'],['Gider Tikaniklik','Ipucu','gider,boru'],['Ambiyans Isik','Rehber','ambiyans,LED arka'],['Duvar Kagidi Banyo','Bilgi','duvar kagidi,su gecirmez'],['Dolap Ayak Tipleri','Rehber','ayak,metal'],['Renovasyon Zamani','Rehber','renovasyon,mevsim'],['Dusakabin Zemin Hazir','Rehber','zemin,yalitim'],['Gri Tonlar Banyo','Dekorasyon','gri,fume'],
+['Ic Aydinlatma','Urun','ic LED,otomatik'],['Mermer Seramik','Dekorasyon','mermer seramik,marble'],['Yerli vs Ithal','Karsilastirma','yerli,ithal'],['Aydinlatma Katman','Rehber','genel,gorev'],['Raf Malzemeleri','Rehber','cam raf,ayarlanabilir'],['Alan Hesaplama','Bilgi','minimum olcu,ideal'],['Vintage Banyo','Ilham','vintage,retro'],['Renk Uyumu','Ipucu','renk,uyum'],['Su Yalitim A-Z','Rehber','yalitim,izolasyon'],['Renk Psikolojisi','Bilgi','psikoloji,mavi'],
+['Nakliye Ipuclari','Ipucu','nakliye,tasima'],['Fotosel Isik','Bilgi','fotosel,sensor'],['Simetri Asimetri','Dekorasyon','simetrik,asimetrik'],['Fiyat Listesi 2026','Rehber','fiyat,guncel'],['Surdurulebilir Banyo','Bilgi','eko,cevre'],['10 Renk Kombinasyon','Ilham','renk,kombinasyon'],['Cam Kirilir mi','Bilgi','temperli,guvenlik'],['Kuf Onleme 10 Yol','Ipucu','kuf,nem'],['Butce Planlama','Rehber','butce,maliyet'],['Mozaik Bordur','Dekorasyon','mozaik,bordur'],
+['Ayna Isitici','Bilgi','isitici,anti-fog'],['Dogal Isik Max','Ipucu','dogal isik,aydınlik'],['Cam Kapak Dolap','Urun','cam kapak,vitrin'],['Wabi-Sabi Banyo','Ilham','wabi-sabi,organik'],['Silikon Uygulama','Ipucu','silikon,su gecirmez'],['Surgu Bakimi','Ipucu','surgu,ray'],['Pembe Tonlar','Trendler','pembe,blush'],['Numune Talep','Rehber','numune,ornegi'],['Siyah Beyaz Banyo','Dekorasyon','kontrast,monokrom'],['Priz USB Entegre','Urun','priz,USB'],
+['Enerji Verimlilik','Bilgi','enerji,tasarruf'],['Seramik Tamir','Ipucu','tamir,onarim'],['Teak Ahsap','Dekorasyon','teak,tropikal'],['Esik Profili','Rehber','esik,su bariyeri'],['Granit Tezgah','Dekorasyon','granit,dogal'],['Camasir Sepeti','Urun','sepet,entegre'],['Aromaterapi Dus','Bilgi','aromaterapi,spa'],['Lacivert Altin','Dekorasyon','lacivert,navy'],['Kapak Degisimi','Ipucu','kapak,ekonomik'],['Futuristik 2030','Trendler','futuristik,teknoloji'],
+['Yapistirici Bilgi','Bilgi','yapistirici,PVA'],['Epoksi Zemin','Trendler','epoksi,recine'],['Bluetooth Dolap','Urun','bluetooth,muzik'],['Bakir Aksesuar','Trendler','bakir,copper'],['Buyuk Format Karo','Dekorasyon','buyuk format,120x60'],['Acik Dus Konsepti','Ilham','acik dus,kapisiz'],['PET Akrilik Kaplama','Bilgi','PET,akrilik'],['Alcipan Nem','Rehber','alcipan,yesil'],['Feng Shui Banyo','Ilham','feng shui,enerji'],['Traverten Banyo','Dekorasyon','traverten,dogal']
 ];
-var blCats=[];BP.forEach(function(b){if(blCats.indexOf(b[1])<0)blCats.push(b[1])});
-var blFlt='Tumu',blSrch='',blVc=12;
-function gfb(){
-return BP.filter(function(b){
-var cm=blFlt==='Tumu'||b[1]===blFlt;
-var sm=blSrch===''||b[0].toLowerCase().indexOf(blSrch)>=0||b[2].toLowerCase().indexOf(blSrch)>=0;
-return cm&&sm;
-});
-}
-function rblf(){
-document.getElementById('blfs').innerHTML=['Tumu'].concat(blCats).map(function(c){return '<button class="blf'+(c===blFlt?' a':'')+'" onclick="sbf(\''+c+'\')">'+c+'</button>'}).join('');
-}
-function rbl(){
-var f=gfb(),sh=f.slice(0,blVc);
-document.getElementById('blcn').innerHTML='<b>'+f.length+'</b> makale';
-document.getElementById('blgr').innerHTML=sh.map(function(b,i){
-var tgs=b[2].split(',');
-return '<div class="blc"><div class="blci"><img src="'+bi((i*3+5)%BI.length)+'" alt="'+b[0]+'" loading="lazy"><span class="tg">'+b[1]+'</span></div><div class="blcb"><div class="blcm"><span>'+b[1]+'</span><span>'+['Sub','Oca','Ara','Kas','Eki','Eyl','Agu','Tem','Haz','May','Nis','Mar'][i%12]+' 2026</span></div><h3>'+b[0]+'</h3><div class="bltgs">'+tgs.map(function(t){return '<span class="bltg">'+t.trim()+'</span>'}).join('')+'</div><a href="#" class="bllk">Devamini Oku &#8594;</a></div></div>'}).join('');
-document.getElementById('bllm').style.display=blVc>=f.length?'none':'inline-block';
-}
-function sbf(c){blFlt=c;blVc=12;rblf();rbl()}
-function fbl(){blSrch=document.getElementById('bls').value.toLowerCase().trim();blVc=12;rbl()}
-function blMore(){blVc+=12;rbl()}
+var blC=[];BP.forEach(function(b){if(blC.indexOf(b[1])<0)blC.push(b[1])});
+var blF='Tumu',blS='',blV=12;
+function gfb(){return BP.filter(function(b){var cm=blF==='Tumu'||b[1]===blF;var sm=blS===''||b[0].toLowerCase().indexOf(blS)>=0||b[2].toLowerCase().indexOf(blS)>=0;return cm&&sm})}
+function rblf(){document.getElementById('blfs').innerHTML=['Tumu'].concat(blC).map(function(c){return '<button class="blf'+(c===blF?' a':'')+'" onclick="sbf(\''+c+'\')">'+c+'</button>'}).join('')}
+function rbl(){var f=gfb(),sh=f.slice(0,blV);document.getElementById('blcn').innerHTML='<b>'+f.length+'</b> makale';document.getElementById('blgr').innerHTML=sh.map(function(b,i){var tgs=b[2].split(',');return '<div class="blc"><div class="blci"><img src="'+bi((i*3+5)%BI.length)+'" alt="'+b[0]+'" loading="lazy"><span class="tg">'+b[1]+'</span></div><div class="blcb"><h3>'+b[0]+'</h3><div class="bltgs">'+tgs.map(function(t){return '<span class="bltg">'+t.trim()+'</span>'}).join('')+'</div><a href="#" class="bllk">Devamini Oku &#8594;</a></div></div>'}).join('');document.getElementById('bllm').style.display=blV>=f.length?'none':'inline-block'}
+function sbf(c){blF=c;blV=12;rblf();rbl()}
+function fbl(){blS=document.getElementById('bls').value.toLowerCase().trim();blV=12;rbl()}
+function blMore(){blV+=12;rbl()}
 rblf();rbl();
-
-// FAQ
-var FQ=[
-['Taksit secenekleriniz?','Tum kartlara 12 aya varan vade farksiz taksit. Bonus, Maximum, Axess, World, Paraf, CardFinans.'],
-['Ucretsiz montaj 81 ilde mi?','Evet, Turkiye geneli 81 ilde. Teslimat sonrasi 3 is gunu icinde randevu.'],
-['Ozel olcu uretim var mi?','Evet, cm bazinda hassas uretim. Ozel olculerde %10 fark.'],
-['Iade kosullari?','14 gun kosulsuz iade/degisim. Kullanilmamis ve orijinal ambalajda. Kargo bizden.'],
-['3D tasarim ucretsiz mi?','Evet, tamamen ucretsiz. 3-5 is gununde fotorealistik tasarim.'],
-['Garanti kapsami?','10 yil uretici garantisi. Omur boyu yedek parca destegi.'],
-['Kargo ne zaman gelir?','Stok urunler 3-5 is gunu, ozel uretim 15-20 is gunu.'],
-['Showroom nerede?','Istanbul Maslak. Pzt-Cmt 09-19, Pazar 10-17.']
-];
+var FQ=[['Taksit secenekleri?','Tum kartlara 12 aya varan vade farksiz taksit.'],['81 ilde montaj?','Evet, ucretsiz montaj 81 ilde gecerli.'],['Ozel olcu uretim?','Evet, cm bazinda. %10 fark uygulanir.'],['Iade kosullari?','14 gun kosulsuz iade. Kargo bizden.'],['3D tasarim ucretsiz mi?','Evet, tamamen ucretsiz.'],['Garanti kapsami?','10 yil uretici garantisi. Omur boyu yedek parca.'],['Kargo suresi?','Stok 3-5 is gunu, ozel uretim 15-20 is gunu.'],['Showroom nerede?','Istanbul Maslak. Pzt-Cmt 09-19.']];
 document.getElementById('fql').innerHTML=FQ.map(function(f){return '<div class="fqi"><div class="fqq" onclick="this.parentElement.classList.toggle(\'op\')">'+f[0]+'</div><div class="fqa">'+f[1]+'</div></div>'}).join('');
-
-// Image error fallback
 document.addEventListener('error',function(e){if(e.target.tagName==='IMG'){e.target.style.display='none';if(e.target.parentElement)e.target.parentElement.style.background='linear-gradient(135deg,#e8e2da,#d4c8b8)'}},true);
+}catch(e){document.body.style.opacity='1';console.error('JS Error:',e)}
 </script>
 </body>
 </html>
