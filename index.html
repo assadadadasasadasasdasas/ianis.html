@@ -27,14 +27,8 @@ body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overfl
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg-cream)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
 img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
 
-/* PRELOADER */
-.preloader{position:fixed;inset:0;background:var(--bg);z-index:10000;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .8s,visibility .8s}
-.preloader.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.preloader-logo{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:300;letter-spacing:.6em;color:var(--gold);text-transform:uppercase;opacity:0;animation:pF 1s ease .3s forwards}
-.preloader-sub{font-size:.6rem;letter-spacing:.5em;color:var(--text-lighter);margin-top:10px;text-transform:uppercase;opacity:0;animation:pF 1s ease .6s forwards}
-.preloader-bar{width:200px;height:2px;background:var(--border);margin-top:30px;border-radius:2px;overflow:hidden}
-.preloader-bar::after{content:'';display:block;width:0;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));animation:pB 2s ease forwards}
-@keyframes pF{to{opacity:1}}@keyframes pB{to{width:100%}}
+/* PRELOADER - DISABLED */
+.preloader{display:none !important}
 
 /* TOPBAR */
 .topbar{background:var(--gold);padding:9px 50px;display:flex;justify-content:center;gap:50px;font-size:.68rem;font-weight:500;color:#fff;letter-spacing:.1em;position:relative;z-index:999}
@@ -525,7 +519,7 @@ footer{background:var(--text);padding:70px 50px 35px;color:rgba(255,255,255,.7)}
     <div class="contact-row">
       <div class="contact-item"><div class="clabel">Telefon</div><div class="cvalue"><a href="tel:+902121234567">0212 123 45 67</a></div></div>
       <div class="contact-item"><div class="clabel">WhatsApp</div><div class="cvalue"><a href="#">0532 123 45 67</a></div></div>
-      <div class="contact-item"><div class="clabel">E-posta</div><div class="cvalue"><a href="mailto:info@istanbulbanyo.com">info@istanbulbanyo.com</a></div></div>
+      <div class="contact-item"><div class="clabel">E-posta</div><div class="cvalue"><a href="#" onclick="window.location='mai'+'lto:info'+'@istanbulbanyo.com.tr'">info(at)istanbulbanyo.com.tr</a></div></div>
       <div class="contact-item"><div class="clabel">Showroom</div><div class="cvalue">Maslak, İstanbul</div></div>
     </div>
   </div>
@@ -556,7 +550,7 @@ footer{background:var(--text);padding:70px 50px 35px;color:rgba(255,255,255,.7)}
     <div class="footer-col"><h4>Ürünler</h4><a href="#">Banyo Dolapları</a><a href="#">Duşakabinler</a><a href="#">Aynalı Dolaplar</a><a href="#">Lavabo Takımları</a><a href="#">Aksesuarlar</a><a href="#">Mobilya</a><a href="#">Bataryalar</a></div>
     <div class="footer-col"><h4>Hizmetler</h4><a href="#">Ücretsiz Keşif</a><a href="#">3D Tasarım</a><a href="#">Özel Üretim</a><a href="#">Montaj</a><a href="#">Taksit</a><a href="#">İade</a><a href="#">Garanti</a></div>
     <div class="footer-col"><h4>Kurumsal</h4><a href="#">Hakkımızda</a><a href="#">Bayilik</a><a href="#">Kariyer</a><a href="#">Blog</a><a href="#">Basın</a><a href="#">KVKK</a></div>
-    <div class="footer-col"><h4>İletişim</h4><a href="#">0212 123 45 67</a><a href="#">WhatsApp</a><a href="#">info@istanbulbanyo.com</a><a href="#">Maslak, İstanbul</a><a href="#">Pzt-Cmt: 09-19</a></div>
+    <div class="footer-col"><h4>İletişim</h4><a href="#">0212 123 45 67</a><a href="#">WhatsApp</a><a href="#">info(at)istanbulbanyo.com.tr</a><a href="#">Maslak, İstanbul</a><a href="#">Pzt-Cmt: 09-19</a></div>
   </div>
   <div class="footer-bottom">
     <p>&copy; 2026 İstanbul Banyo. Tüm hakları saklıdır.</p>
@@ -973,15 +967,9 @@ const faqData=[
 document.getElementById('faqList').innerHTML=faqData.map(f=>`<div class="faq-item reveal"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}</div><div class="faq-a">${f.a}</div></div>`).join('');
 
 // Re-observe dynamically added reveals
-setTimeout(()=>document.querySelectorAll('.reveal:not(.visible)').forEach(el=>rObs.observe(el)),300);
-
+setTimeout(function(){document.querySelectorAll('.reveal:not(.visible)').forEach(function(el){rObs.observe(el)})},300);
 // Image error fallback
-document.addEventListener('error',function(e){
-  if(e.target.tagName==='IMG'){
-    e.target.style.display='none';
-    if(e.target.parentElement) e.target.parentElement.style.background='linear-gradient(135deg,#e8e2da,#d4c8b8)';
-  }
-},true);
+document.addEventListener('error',function(e){if(e.target.tagName==='IMG'){e.target.style.display='none';if(e.target.parentElement)e.target.parentElement.style.background='linear-gradient(135deg,#e8e2da,#d4c8b8)'}},true);
 </script>
 </body>
 </html>
