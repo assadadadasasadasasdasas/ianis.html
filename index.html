@@ -525,7 +525,7 @@ footer{background:var(--text);padding:70px 50px 35px;color:rgba(255,255,255,.7)}
     <div class="contact-row">
       <div class="contact-item"><div class="clabel">Telefon</div><div class="cvalue"><a href="tel:+902121234567">0212 123 45 67</a></div></div>
       <div class="contact-item"><div class="clabel">WhatsApp</div><div class="cvalue"><a href="#">0532 123 45 67</a></div></div>
-      <div class="contact-item"><div class="clabel">E-posta</div><div class="cvalue"><a href="/cdn-cgi/l/email-protection#50393e363f10392324313e32253c32313e293f7e333f3d"><span class="__cf_email__" data-cfemail="b8d1d6ded7f8d1cbccd9d6dacdd4dad9d6c1d796dbd7d5">[email&#160;protected]</span></a></div></div>
+      <div class="contact-item"><div class="clabel">E-posta</div><div class="cvalue"><a href="mailto:info@istanbulbanyo.com">info@istanbulbanyo.com</a></div></div>
       <div class="contact-item"><div class="clabel">Showroom</div><div class="cvalue">Maslak, İstanbul</div></div>
     </div>
   </div>
@@ -556,7 +556,7 @@ footer{background:var(--text);padding:70px 50px 35px;color:rgba(255,255,255,.7)}
     <div class="footer-col"><h4>Ürünler</h4><a href="#">Banyo Dolapları</a><a href="#">Duşakabinler</a><a href="#">Aynalı Dolaplar</a><a href="#">Lavabo Takımları</a><a href="#">Aksesuarlar</a><a href="#">Mobilya</a><a href="#">Bataryalar</a></div>
     <div class="footer-col"><h4>Hizmetler</h4><a href="#">Ücretsiz Keşif</a><a href="#">3D Tasarım</a><a href="#">Özel Üretim</a><a href="#">Montaj</a><a href="#">Taksit</a><a href="#">İade</a><a href="#">Garanti</a></div>
     <div class="footer-col"><h4>Kurumsal</h4><a href="#">Hakkımızda</a><a href="#">Bayilik</a><a href="#">Kariyer</a><a href="#">Blog</a><a href="#">Basın</a><a href="#">KVKK</a></div>
-    <div class="footer-col"><h4>İletişim</h4><a href="#">0212 123 45 67</a><a href="#">WhatsApp</a><a href="#"><span class="__cf_email__" data-cfemail="92fbfcf4fdd2fbe1e6f3fcf0e7fef0f3fcebfdbcf1fdff">[email&#160;protected]</span></a><a href="#">Maslak, İstanbul</a><a href="#">Pzt-Cmt: 09-19</a></div>
+    <div class="footer-col"><h4>İletişim</h4><a href="#">0212 123 45 67</a><a href="#">WhatsApp</a><a href="#">info@istanbulbanyo.com</a><a href="#">Maslak, İstanbul</a><a href="#">Pzt-Cmt: 09-19</a></div>
   </div>
   <div class="footer-bottom">
     <p>&copy; 2026 İstanbul Banyo. Tüm hakları saklıdır.</p>
@@ -564,9 +564,12 @@ footer{background:var(--text);padding:70px 50px 35px;color:rgba(255,255,255,.7)}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Preloader
-window.addEventListener('load',()=>setTimeout(()=>document.getElementById('preloader').classList.add('hidden'),2000));
+<script>
+// Preloader - hide quickly, don't wait for images
+function hidePreloader(){document.getElementById('preloader').classList.add('hidden')}
+if(document.readyState==='complete'||document.readyState==='interactive'){setTimeout(hidePreloader,1500)}
+else{document.addEventListener('DOMContentLoaded',()=>setTimeout(hidePreloader,1500))}
+setTimeout(hidePreloader,3000); // absolute fallback
 // Nav scroll
 window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50));
 // Smooth scroll
@@ -967,4 +970,18 @@ const faqData=[
   {q:'Kargo ne zaman gelir?',a:'Stok ürünler 3-5 iş günü, özel üretim 15-20 iş günü. SMS ve e-posta ile kargo takip bilgisi gönderilir.'},
   {q:'Showroom nerede?',a:'İstanbul Maslak. Pzt-Cmt 09:00-19:00, Pazar 10:00-17:00. Tüm ürünleri yerinde görebilirsiniz.'}
 ];
-document.getElementById('faqList').innerHTML=faqD
+document.getElementById('faqList').innerHTML=faqData.map(f=>`<div class="faq-item reveal"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}</div><div class="faq-a">${f.a}</div></div>`).join('');
+
+// Re-observe dynamically added reveals
+setTimeout(()=>document.querySelectorAll('.reveal:not(.visible)').forEach(el=>rObs.observe(el)),300);
+
+// Image error fallback
+document.addEventListener('error',function(e){
+  if(e.target.tagName==='IMG'){
+    e.target.style.display='none';
+    if(e.target.parentElement) e.target.parentElement.style.background='linear-gradient(135deg,#e8e2da,#d4c8b8)';
+  }
+},true);
+</script>
+</body>
+</html>
